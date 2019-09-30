@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin-left: 0px;   
+    margin-top: 0px;    
+    margin-right: 0px;    
+    margin-bottom: 0px;    
+    height: 100%;
+}
+
+body{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color:#e4e4e4;
+    color:#324a5e;
+    /* -webkit-animation: fadein 1s; 
+    -moz-animation: fadein 1s; 
+    -ms-animation: fadein 1s; 
+    -o-animation: fadein 1s; 
+     animation: fadein 1s; */
+    font-family: 'Open Sans', sans-serif;    
+    font-weight: 500
+}
+
+.btn_salir{
+    font-size:12px;
+} 
+
+.clear{
+    clear: both;
+}
+
+#contentPageBievenido{
+    width: 80%;
+    float: right;
+    padding: 20px 67px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+.white{
+    background-color: #fff;
+}

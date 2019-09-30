@@ -1,0 +1,341 @@
+
+
+img{
+    border:0;
+}
+
+a{
+    text-decoration:none;
+    color:#324a5e;
+    transition: all 0.2s ease 0s;
+}
+
+a:hover {
+    color: #00618F;
+    transition: all 0.2s ease 0s;
+}
+
+li {
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
+    border-collapse: 0px;
+    list-style:none;
+}
+ul {
+    border-spacing: 0;
+    margin: 0px;
+    overflow: auto;
+    padding: 0;
+}
+.content {
+    text-align: left;
+    width: 100%;
+}
+.contentLog {
+    position: fixed;
+    z-index: 1;
+    margin: 0 auto;
+    width: 745px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    top: 20%;
+    min-height: 390px;
+    overflow: hidden;
+    height: 408px;
+}
+.login {
+    display: flex;
+    /*width: 800px;*/
+    height: 100%;
+    position: absolute;
+}
+.gris {
+    background-color: #333333;
+    width: 260px;
+    transition: 1.0s ease all;
+    -moz-transition: 1.0s ease all;
+    -webkit-transition: 1.0s ease all;
+}
+.contentForm{
+    position: relative;
+}
+.contentElement {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.elementos {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 18px;
+    position: relative;
+}
+.elementosSub {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.texto_login {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+.texto_sub_login {
+    display: block;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 17px;
+}
+.btn_login {
+    border: 1px solid #ffffff;
+    padding: 10px 0px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    font-size: 12px;
+    color: #ffffff;
+    margin: 15px 0;
+    width: auto;
+    text-align: center;
+    padding: 10px 20px;
+}
+.btn_login:hover {
+    background-color:rgba(255,255,255,0.1);
+    transition:all ease-out 0.5s;
+}
+.btn_login2 {
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    background-color: rgba(205, 205, 205, 1);
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    font-size: 12px;
+    color: #fff;
+    margin: 15px 0;
+    padding: 10px 20px;
+    float:right;
+}
+.ttLogin {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.bajadaLogin{
+    color: #9d9d9d;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.group {
+    position: relative;
+    margin-top: 20px;
+    text-align: right;
+}
+input {
+    font-size: 14px;
+    padding: 15px 0px 2px 0px;
+    display: block;
+    color: #100f12;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    transition: all 0.2s ease 0s;
+    background-color: transparent;
+}
+label {
+    color: #d9d9d9;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    text-transform: initial;
+}
+input:focus ~ label, input:valid ~ label {
+    top: 0px;
+    font-size: 12px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+input:focus{
+    outline:0px;
+}
+.text_bottom{
+    position: absolute;
+    bottom: 20px;
+    font-size: 13px;
+    left: 0;
+    right: 0;
+}
+.blanco{
+    color:#fff;
+}
+
+@keyframes outRight {
+    from {
+        right:0px;
+    }
+    to {
+        right:-400px;
+    }
+}
+@keyframes outLeft {
+    from {
+        left:0px; 
+    }
+    to {
+        left:-400px; 
+    }
+}
+
+@keyframes select {
+    from {
+        width:200px;
+    }
+    to {
+        width:400px;
+    }
+}
+
+.out1{
+    animation-name: outRight;
+    animation-duration: 1s;
+}
+.out2{
+    animation-name: outLeft;
+    animation-duration: 1s;
+}
+
+@keyframes inRight {
+    from {
+        right:-400px;
+    }
+    to {
+        right:0px;
+    }
+}
+@keyframes inLeft {
+    from {
+        left:-400px;
+    }
+    to {
+        left:0px;
+    }
+}
+
+.in1{
+    animation-name: inLeft;
+    animation-duration: 1s;
+}
+.in2{
+    animation-name: inRight;
+    animation-duration: 1s;
+}
+.select{
+    width:486px;
+    transition: 1.0s ease all;
+    -moz-transition: 1.0s ease all;
+    -webkit-transition: 1.0s ease all;
+}
+.ocultar{
+    display:none;
+    transition: 1.2s ease all;
+    -moz-transition: 1.2s ease all;
+    -webkit-transition: 1.2s ease all;
+}
+.ini1{
+    left:0px!important;
+    transition: 1.5s ease all;
+    -moz-transition: 1.5s ease all;
+    -webkit-transition: 1.5s ease all;
+}
+#elementIngreso{
+    width:400px;
+}
+
+
+/*STYLE AGREGADOS POR MARIANO */
+#validacion{
+    margin-top: 15px;
+}
+#texto_validation{
+    width: 47%;
+    float: left;
+}
+#number_validation{
+    width: 53%;
+    float: left;  
+}
+#texto_validation p{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+#texto_validation small{
+    text-align: left;
+    font-size: 13px;
+    display: block; 
+}
+
+.progress {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: darken($mute, 33%);
+    padding-top: 22px;
+    float: right;
+ }
+
+.progress > li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.9em;
+    margin-right: 7px;
+}
+.progress > li:last-child{
+    margin-right: 0!important;
+}
+.progress > li:before {
+    content: attr(data-step);
+    display: block;
+    margin: 0 auto;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    margin-bottom: 0.25em;
+    line-height: 2em;
+    border: solid 1px #979797;
+    position: relative;
+    z-index: 1000;
+}
+.is-active {
+    color: $active;
+}

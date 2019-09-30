@@ -1,0 +1,249 @@
+#home .tituloEncabezado h2{
+    font-weight: 400;
+}
+.cardDashboard{
+    margin-top: 20px;
+    float: left;
+}
+/* .cardDashboard{
+    float: left;
+    width: 75%;
+} */
+.cardDashboard .boxDash{
+    width: 470px;
+    float: left;
+    height: 236px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.actualidadDashboard{
+    float: left;
+    width: 25%;
+}
+.cardDashboard .boxDash .linea_vertical{
+    width: 15px;
+    height: 100%;
+    -webkit-border-top-left-radius: 12px;
+    -webkit-border-bottom-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -moz-border-radius-bottomleft: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.cardDashboard .boxDash .color_1{
+    background-color: #e1e1e1;
+}
+.cardDashboard .boxDash .color_2{
+    background-color: #9c9c9c;
+}
+.cardDashboard .boxDash .color_3{
+    background-color: #626262;
+}
+.cardDashboard .boxDash .color_4{
+    background-color: #c7c7c7;
+}
+.cardDashboard .boxDash .color_5{
+    background-color: #9c9c9c;
+}
+.cardDashboard .boxDash .color_6{
+    background-color: #1a1a1a;
+}
+
+.cardDashboard .boxDash .linea_vertical .contentDash .titulo_card{
+    float: left;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .boxDashVerTodas a{
+    display: block;
+    color: #6a6a6a;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .boxDashVerTodas a:hover{
+    color: #333333;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .titulo_card h3{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 24px;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .tituloPlazo h3{
+    margin-bottom: 0;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .tituloPlazo p{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .boxDashVerTodas{
+    float: right;
+}
+.contentDash{
+    padding: 20px 0px 20px 30px;
+    width: 400px;
+    height: 196px;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .dashFilaUno,
+.cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos{
+    margin-bottom: 30px;
+    float: left;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos,
+.cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos{
+    float: right;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .dashFilaUno h4,
+.cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos h4{
+    font-size: 18px;
+    font-weight: 400;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .dashFilaUno p{
+    color: #9d9d9d;
+    font-size: 14px;
+}
+
+.cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos p{
+    font-size: 17px;
+    text-align: right;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .proxCuotas{
+    margin-bottom: 0;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .proxCuotas h4{
+    font-size: 22px;
+    margin-bottom:10px;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .proxCuotas .monto{
+    font-size:23px;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash .proxCuotas .vencimiento{
+    font-size:17px;
+}
+.chart {
+    position: relative;
+    color: #999;
+    font-size: 20px;
+}
+.chart svg {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.outer {
+    fill: transparent;
+    stroke:  #979797;
+    stroke-width: 13;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    -moz-transform: rotate(-89deg) translateX(-190px);
+}
+.chart:hover .outer {
+    stroke-dashoffset: 534 !important;
+    -webkit-animation-play-state: paused;
+}
+
+.chart[data-percent='100'] .outer {
+    stroke-dashoffset: 0;
+    -webkit-animation: show100 2s;
+    animation: show100 2s;
+}
+  
+.chart[data-percent='75'] .outer {
+    stroke-dashoffset: 133;
+    -webkit-animation: show75 2s;
+    animation: show75 2s;
+}
+  
+.chart[data-percent='50'] .outer {
+    stroke-dashoffset: 267;
+    -webkit-animation: show50 2s;
+    animation: show50 2s;
+}
+  
+.chart[data-percent='25'] .outer {
+    stroke-dashoffset: 401;
+    -webkit-animation: show25 2s;
+    animation: show25 2s;
+}
+
+@-webkit-keyframes show100 {
+from {
+    stroke-dashoffset: 537;
+}
+
+to {
+    stroke-dashoffset: 0;
+}
+}
+
+@keyframes show100 {
+from {
+    stroke-dashoffset: 537;
+}
+
+to {
+    stroke-dashoffset: 0;
+}
+}
+
+@-webkit-keyframes show75 {
+from {
+    stroke-dashoffset: 537;
+}
+
+to {
+    stroke-dashoffset: 134;
+}
+}
+
+@keyframes show75 {
+from {
+    stroke-dashoffset: 537;
+}
+
+to {
+    stroke-dashoffset: 124;
+}
+}
+
+@-webkit-keyframes show50 {
+from {
+    stroke-dashoffset: 537;
+}
+
+to {
+    stroke-dashoffset: 267;
+}
+}
+
+@keyframes show50 {
+from {
+    stroke-dashoffset: 537;
+}
+
+to {
+    stroke-dashoffset: 267;
+}
+}
+
+@-webkit-keyframes show25 {
+from {
+    stroke-dashoffset: 537;
+}
+
+to {
+    stroke-dashoffset: 401;
+}
+}
+
+@keyframes show25 {
+from {
+    stroke-dashoffset: 537;
+}
+
+to {
+    stroke-dashoffset: 401;
+}
+}

@@ -1,0 +1,64 @@
+<div id="cabeceraBienvenido">
+    <div class="logoBienvenido">
+        <a href="" routerLinkActive="active-link" routerLink="/"><h1>Red Link</h1></a>
+    </div>
+    <div class="usuarioLogeado">
+        <a href="">Salir</a>
+    </div>
+</div>
+
+<div id="contentMenuBienv">
+    <div class="menuBienvenido">
+        <div class="usuarioHomeBanking">
+            <img src="../assets/images/avatar.png" class="avatar" alt="">
+        </div>
+        <div class="usuarioRegistrado">
+            <h4>Hola, <strong>Russell!</strong></h4>
+            <div id="selectorUsuario">
+            <select >
+                <option value="hide"></option> 
+                <option value="" rel="icon-temperature"></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select> 
+        </div>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="" routerLink="/home" routerLinkActive="router-active-link">
+                    <img src="../assets/images/grid.svg" alt=""/>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="" routerLink="/pagar" routerLinkActive="router-active-link">
+                    <img src="../assets/images/credit-card.svg" alt=""/>
+                    <span>Pagar</span>
+                </a>
+            </li>
+            <li>
+                <a href="" routerLink="/recargar" routerLinkActive="router-active-link">
+                    <img src="../assets/images/credit-card.svg" alt=""/>
+                    <span>Recargar</span>
+                </a>
+            </li> 
+            <li>
+                <a href="" routerLink="/transferir" routerLinkActive="router-active-link">
+                    <img src="../assets/images/group-3.svg" alt=""/>
+                    <span>Transferir</span>
+                </a>
+            </li>                         
+            <li>
+                <a href="" routerLink="/transferir" routerLinkActive="router-active-link">
+                    <img src="../assets/images/trending-up.svg" alt=""/>
+                    <span>Invertir</span>
+                </a>
+            </li>  
+        </ul>  
+    </div> 
+</div>
+
+<div id="contentPageBievenido">
+    <router-outlet></router-outlet>
+</div>
+

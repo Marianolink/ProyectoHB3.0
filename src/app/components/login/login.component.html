@@ -1,0 +1,91 @@
+<section>
+    <div class="content" style="height:100%;">
+      <div class="contentLog ">
+        <div class="login">
+          <div id="registro" class="contentForm gris">
+            <div class="contentElement">
+  
+              <div class="elementosSub" id="elementRegistro">
+                <div class="texto_login">¿No tenés usuario?</div>
+                <div class="texto_sub_login">Creá un usuario para<br/>acceder a tu nuevo homebanking</div>
+                <div class="btn_login" (click)="registro()">REGISTRATE</div>
+                <div class="text_bottom blanco">Si ten&eacute;s dudas mirá este <b>tutorial.</b></div>
+              </div>
+  
+              <div class="elementos ocultar" id="elementReg">
+                  <div id="ttLogin" class="ttLogin">Creá un nuevo usuario</div>
+                  <div id="ttLogin" class="bajadaLogin">Ingresá los siguientes datos</div>
+                  <div id="group_usuario" class="group">
+                    <input id="usuario" type="text" onclick="javascript:selectForm();" onfocus="javascript:jsFocus('usuario');" value="" name="usuario" required><label>Usuario</label>
+                    <div class="error" id="error_usuario"></div>
+                  </div>
+                  <div id="group_usuario" class="group">
+                    <input id="pass" type="password" onfocus="javascript:jsFocus('pass');" value="" name="pass" required><label>Contrase&ntilde;a</label>
+                    <div class="error" id="error_pass"></div>
+                  </div>
+                  <div id="validacion" >
+                    <div id="texto_validation">
+                      <p>Demostranos que sos un humano</p>
+                      <small>Arrastrá para ordenarlos</small>
+                    </div>
+
+                    <div id="number_validation">
+                      <ol class="progress">
+                        <li class="is-active" data-step="1">                          
+                        </li>
+                        <li data-step="2">                          
+                        </li>
+                        <li data-step="3" class="progress__last">         
+                        </li>
+                        <li class="is-active" data-step="1">                          
+                        </li>
+                        <li data-step="2">                          
+                        </li>
+                        <li data-step="3" class="progress__last">         
+                        </li>
+                      </ol>                      
+                    </div>
+
+                  </div>
+                  <div class="pie_login">
+                    <div id="btn_login2" class="btn_login2" (click)="login()">CREAR</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div id="login" class="contentForm select">
+            <div class="contentElement">
+  
+              <div class="elementos" id="elementIngreso">
+                <div id="ttLogin" class="ttLogin">Ingres&aacute;<br/>a tu homebanking</div>
+                <div id="group_usuario" class="group">
+                  <input id="usuario" type="text" onclick="javascript:selectForm();" onfocus="javascript:jsFocus('usuario');" value="" name="usuario" required><label>Usuario</label>
+                  <div class="error" id="error_usuario"></div>
+                </div>
+                <div id="group_usuario" class="group">
+                  <input id="pass" type="password" onfocus="javascript:jsFocus('pass');" value="" name="pass" required><label>Contrase&ntilde;a</label>
+                  <div class="error" id="error_pass"></div>
+                </div>
+                <div class="pie_login">
+                  <div id="btn_login2" class="btn_login2" (click)="login()">INGRESÁ</div>
+                </div>
+                <div class="text_bottom">¿Problemas con tu usuario o password? <b>Te ayudamos a solucionarlo.</b></div>
+              </div>
+  
+              <div class="elementosSub ocultar" id="elementIngreso2">
+                  <div class="texto_login">¿Ya ten&eacute;s usuario?</div>
+                  <div class="texto_sub_login">Para acceder a tu home banking<br/>ingresá tu usuario y contrasena</div>
+                  <div class="btn_login" (click)="log()">INGRESAR</div>
+                  <div class="text_bottom blanco">Si tenés dudas mirá este <b>tutorial.</b></div>
+                </div>
+  
+            </div>
+  
+          </div>
+          
+        </div>
+      </div>
+      <div class="background_login"></div>
+    </div>
+  </section>
+  
