@@ -12,6 +12,7 @@ import { PagarComponent } from './components/pagar/pagar.component';
 import { RecargarComponent } from './components/recargar/recargar.component';
 import { TransferirComponent } from './components/transferir/transferir.component';
 import { InvertirComponent } from './components/invertir/invertir.component';
+import { CajasComponent } from './components/cuentas/caja-ahorro-pesos/detalle-cajas-ahorro-pesos.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InvertirComponent } from './components/invertir/invertir.component';
     PagarComponent,
     RecargarComponent,
     TransferirComponent,
-    InvertirComponent
+    InvertirComponent,
+    CajasComponent
   ],
   imports: [
     BrowserModule,

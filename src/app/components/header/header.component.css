@@ -6,7 +6,6 @@
     background-color: #fff;
     z-index: 5;
 }
-
 #cabeceraBienvenido .logoBienvenido{
     float: left;
     margin: 20px 0 0 32px;
@@ -20,10 +19,44 @@
 }
 #cabeceraBienvenido .usuarioLogeado{
     float: right;
+    position: relative;
     margin: 30px 32px 0 0;
 }
-#cabeceraBienvenido .usuarioLogeado a{
-    font-size: 21px;
+#cabeceraBienvenido .usuarioLogeado ul{
+    list-style: none;
+}
+#cabeceraBienvenido .usuarioLogeado ul li{
+    display: inline-block;
+    border-right: 1px solid #dedede;
+    padding: 0 20px;
+}
+#cabeceraBienvenido .usuarioLogeado ul li:last-child{
+    border-right: 0;
+}
+#cabeceraBienvenido .usuarioLogeado .fa-search{
+    font-size: 24px;   
+    color: #acacac;
+}
+#cabeceraBienvenido .usuarioLogeado .fa-envelope{
+    font-size: 24px;    
+}
+#cabeceraBienvenido .usuarioLogeado .notificacion{
+    position: absolute;
+    line-height: 22px;
+    padding: 0 6px;
+    font-weight: 700;
+    background: #9d9d9d;
+    border-radius: 100%;
+    top: -10px;
+    color: #fff;
+    /* right: 2px; */
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    left: 12px;
+    text-decoration: none;
+}
+#cabeceraBienvenido .usuarioLogeado .exit{
+    font-size: 19px;
     text-decoration: none;
 }
 #contentMenuBienv{

@@ -3,7 +3,21 @@
         <a href="" routerLinkActive="active-link" routerLink="/"><h1>Red Link</h1></a>
     </div>
     <div class="usuarioLogeado">
-        <a href="">Salir</a>
+        <ul>
+            <li>
+                <i data-feather="circle"></i>
+                <i class="fas fa-search"></i> 
+            </li>
+            <li style="position: relative">        
+                <a href=""><i class="far fa-envelope"></i></a>
+                <a href="" class="notificacion">5</a>
+            </li>
+            <li>
+                <a href="" class="exit">Salir</a>
+            </li>
+        </ul>
+
+        
     </div>
 </div>
 
@@ -15,13 +29,13 @@
         <div class="usuarioRegistrado">
             <h4>Hola, <strong>Russell!</strong></h4>
             <div id="selectorUsuario">
-            <select >
-                <option value="hide"></option> 
-                <option value="" rel="icon-temperature"></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select> 
-        </div>
+                <select >
+                    <option value="hide"></option> 
+                    <option value="" rel="icon-temperature"></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select> 
+            </div>
         </div>
         <ul class="menu">
             <li>
@@ -61,4 +75,4 @@
 <div id="contentPageBievenido">
     <router-outlet></router-outlet>
 </div>
-
+ 

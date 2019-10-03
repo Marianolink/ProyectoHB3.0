@@ -5,16 +5,26 @@
     margin-top: 20px;
     float: left;
 }
-/* .cardDashboard{
-    float: left;
-    width: 75%;
-} */
 .cardDashboard .boxDash{
     width: 470px;
     float: left;
     height: 236px;
-    margin-right: 15px;
-    margin-bottom: 20px;
+    margin-right: 35px;
+    margin-bottom: 15px;
+    background: #fbfbfb;
+    border-radius: 15px;
+}
+
+.cardDashboard .wrong-item {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cardDashboard .wrong-item:hover, .wrong-item:active {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
 }
 .actualidadDashboard{
     float: left;
@@ -48,7 +58,9 @@
 .cardDashboard .boxDash .color_6{
     background-color: #1a1a1a;
 }
-
+.cardDashboard .boxDash .color_7{
+    background-color: #e1e1e1;
+}
 .cardDashboard .boxDash .linea_vertical .contentDash .titulo_card{
     float: left;
 }
@@ -79,13 +91,20 @@
 }
 .contentDash{
     padding: 20px 0px 20px 30px;
-    width: 400px;
+    width: 420px;
     height: 196px;
 }
 .cardDashboard .boxDash .linea_vertical .contentDash .dashFilaUno,
 .cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos{
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     float: left;
+}
+.cardDashboard .boxDash .linea_vertical .contentDash hr {
+    background:#979797;
+    height: 1px;
+    width: 100%;
+    margin: 15px 0;
+
 }
 .cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos,
 .cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos{
@@ -100,7 +119,6 @@
     color: #9d9d9d;
     font-size: 14px;
 }
-
 .cardDashboard .boxDash .linea_vertical .contentDash .dashFilaDos p{
     font-size: 17px;
     text-align: right;
@@ -120,6 +138,49 @@
 .cardDashboard .boxDash .linea_vertical .contentDash .proxCuotas .vencimiento{
     font-size:17px;
 }
+.cardDashboard .boxDash  .cotizacionDolarHoy .boxCotizacion{
+    padding: 0 50px
+}
+.cardDashboard .boxDash  .cotizacionDolarHoy .dashFilaUnoCompra{ 
+    float: left;
+    padding-top: 10px
+}
+.cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaUnoCompra > h4{
+    font-size: 19px!important;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaUnoCompra > span{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.cardDashboard .boxDash .cotizacionDolarHoy .venta{
+    padding-right: 25px;
+}
+
+.cardDashboard .boxDash  .cotizacionDolarHoy .dashFilaDosVenta{   
+    float: right;
+    padding-top: 10px
+}
+.cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaDosVenta > h4{
+    font-size: 19px!important;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaDosVenta > span{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+
 .chart {
     position: relative;
     color: #999;
@@ -167,6 +228,50 @@
     -webkit-animation: show25 2s;
     animation: show25 2s;
 }
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno{
+    width: 100%;
+}
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno .titulo_servicio{
+    width: 48%;
+    float: left;
+}
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno .titulo_servicio span{
+    display: block;
+    font-size: 18px;
+    color: #3d3d3d;
+}
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno .monto_servicio{
+    float: right;
+}
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno .monto_servicio span{
+    font-size: 16px;
+}
+.cardDashboard .boxDash .card_estado_servicios .progress {
+    width: 100%;
+    margin-top: 3px;
+    height: 7px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.cardDashboard .boxDash .card_estado_servicios .progress_bar {
+    height: 7px;
+    float: left;
+    width: 58%;
+    background: rgb(59, 59, 59);
+    -webkit-animation: bar 2s;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @-webkit-keyframes show100 {
 from {
