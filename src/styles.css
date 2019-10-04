@@ -24,7 +24,7 @@ body{
     -ms-animation: fadein 1s; 
     -o-animation: fadein 1s; 
      animation: fadein 1s; */
-    font-family: 'Open Sans', sans-serif;    
+    font-family: 'Open Sans', sans-serif!important;    
     font-weight: 500
 }
 
@@ -35,14 +35,8 @@ body{
 .clear{
     clear: both;
 }
-
 #contentPageBievenido{
-    width: 80%;
-    float: right;
-    padding: 20px 67px;
-    position: absolute;
-    right: 0;
-    top: 80px;
+    margin-top: 30px
 }
 .white{
     background-color: #fff;
