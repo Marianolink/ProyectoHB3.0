@@ -29,9 +29,12 @@
               
             ],
             "scripts": [
+              "node_modules/feather-icons/dist/feather.min.js",
+              // "node_modules/feather-icons/dist/feather.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/popper.js/dist/popper.min.js",
+             
             ] 
           },
           "configurations": {

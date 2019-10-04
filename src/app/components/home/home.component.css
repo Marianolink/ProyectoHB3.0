@@ -3,7 +3,7 @@ a{
 }
 #content-general .tituloEncabezado h2{
     font-weight: 400;
-    font-size: 21px;
+    font-size: 22px;
 }
 .tituloEncabezado .configuracion_inicio {
     text-transform: uppercase;
@@ -56,6 +56,7 @@ a{
     -moz-border-radius-bottomleft: 7px;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
+    display: flex;
 }
 .cardDashboard .boxDash .color_1{
     border-left:15px solid #e1e1e1;
@@ -114,7 +115,6 @@ a{
 }
 .cardDashboard .boxDash .linea_vertical .contentDash hr {
     background:#979797;
-    height: 1px;
     width: 100%;
     margin: 15px 0;
 }
@@ -153,9 +153,7 @@ a{
 .cardDashboard .boxDash .linea_vertical .contentDash .proxCuotas .vencimiento{
     font-size:14px;
 }
-.cardDashboard .boxDash  .cotizacionDolarHoy .boxCotizacion{
-    padding: 15px 50px;
-}
+
 .cardDashboard .boxDash  .cotizacionDolarHoy .dashFilaUnoCompra{ 
     float: left;
     padding-top: 10px
@@ -168,7 +166,7 @@ a{
 }
 .cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaUnoCompra > span{
     display: block;
-    font-size: 30px;
+    font-size: 27px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 200;
@@ -181,7 +179,7 @@ a{
     padding-top: 10px
 }
 .cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaDosVenta > h4{
-    font-size: 19px!important;
+    font-size: 16px!important;
     text-align: center;
     margin-bottom: 5px;
     font-weight: 500;
@@ -274,7 +272,10 @@ a{
     border-radius: 5px;
 }
 
-
+.productoPre i{
+    font-size: 80px;
+    color: #000;
+}
 
 
 

@@ -15,11 +15,12 @@
 #cabeceraBienvenido .logoBienvenido h1{
     margin: 0;
     font-size: 23px;
+    font-weight: 700
 }
 #cabeceraBienvenido .usuarioLogeado{
     float: right;
     position: relative;
-    margin: 30px 0px 0 0;
+    margin: 25px 0px 0 0;
 }
 #cabeceraBienvenido .usuarioLogeado ul{
     list-style: none;
@@ -28,6 +29,7 @@
     display: inline-block;
     border-right: 1px solid #dedede;
     padding: 0 20px;
+    border-left: 1px solid #dedede;
 }
 #cabeceraBienvenido .usuarioLogeado ul li:last-child{
     border-right: 0;
@@ -38,58 +40,58 @@
 }
 #cabeceraBienvenido .usuarioLogeado .fa-envelope{
     font-size: 24px;    
+    color:  #9d9d9d;
 }
 #cabeceraBienvenido .usuarioLogeado .notificacion{
     position: absolute;
-    line-height: 22px;
+    line-height: 18px;
     padding: 0 6px;
     font-weight: 700;
     background: #9d9d9d;
     border-radius: 100%;
-    top: -10px;
+    top: -7px;
     color: #fff;
-    /* right: 2px; */
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
-    left: 12px;
+    right: 13px;
     text-decoration: none;
+    font-size: 11px;
+    font-weight: 400;
 }
 #cabeceraBienvenido .usuarioLogeado .exit{
-    font-size: 19px;
+    font-size: 17px;
+    color: #3d3d3d;
     text-decoration: none;
 }
 #contentMenuBienv{
     position: relative;
 }
 .menuBienvenido{
-    /* left: 0; */
     min-height: 100%;
     display: block;
-    padding: 0 15px;   
-    /* position: fixed; */
-    /* top: 79px;
-    bottom: 0; */
-    /* height: 100vh; */
-    /* width: 100%; */
 }
-#contentMenuBienv .menuBienvenido .menu{
-    padding: 30px 0;
-    width: 100%;
-}
-#contentMenuBienv .menuBienvenido .menu li{
-    width: 100%;
+#contentMenuBienv .menuBienvenido li{
     list-style: none;
-    margin-bottom: 30px;
 }
-#contentMenuBienv .menuBienvenido .menu li a{
+#contentMenuBienv .menuBienvenido li a{
     text-decoration: none;
+    color: #6a6a6a;
+    padding-left: 0;
 }
-#contentMenuBienv .menuBienvenido .menu li img{
+#contentMenuBienv .menuBienvenido li a span{
+    font-weight: 600;
+}
+
+#contentMenuBienv .menuBienvenido li img{
     position: relative;
-    top: 0;
+    top: 4px;
+    float: left;
 }
-#contentMenuBienv .menuBienvenido .menu li span{
-    margin-left: 8px
+#contentMenuBienv .menuBienvenido li .fas{
+    margin-right: 10px;
+    float: left;
+    position: relative;
+    top: 4px;
 }
 .usuarioRegistrado{
     padding: 0;
@@ -100,16 +102,13 @@
     font-size: 17px;
 }
 #selectorUsuario{
-    padding: 0;
     margin: 0;
-    margin-left: 10px;   
     border-radius: 3px;
     overflow: hidden;
     background: url("/assets/images/arrow.svg")no-repeat 95% 50%;
-    /* background-image: url("./assets/images/arrow.svg") no-repeat 90% 50%; */
+    width: 100%;
 }
 #selectorUsuario select {
-    padding: 5px 8px;
     width: 100%;
     border: none;
     box-shadow: none;
@@ -131,3 +130,4 @@
     height: 50px;
     background-color: #6a6a6a
 }
+
