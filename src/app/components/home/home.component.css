@@ -1,10 +1,7 @@
 a{
     color:#324a5e;
 }
-#content-general .tituloEncabezado h2{
-    font-weight: 400;
-    font-size: 22px;
-}
+
 .tituloEncabezado .configuracion_inicio {
     text-transform: uppercase;
     font-size: 12px;
@@ -166,7 +163,7 @@ a{
 }
 .cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaUnoCompra > span{
     display: block;
-    font-size: 27px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 200;
@@ -186,7 +183,7 @@ a{
 }
 .cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaDosVenta > span{
     display: block;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 200;
@@ -363,4 +360,17 @@ from {
 to {
     stroke-dashoffset: 401;
 }
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .dashPaddingX{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+}
+@media (min-width: 1367px) and (max-width: 1439px) {
+    .dashPaddingX{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
 }

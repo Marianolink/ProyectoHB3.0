@@ -23,3 +23,18 @@ describe('CajasComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+export class CajasComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+    const divBody = document.getElementById("body");
+    divBody.classList.add("white");
+  }
+
+  // public toogleTitle(){
+    
+  //   $(".titulo_card").slideToggle();
+  // }
+}
