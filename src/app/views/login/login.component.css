@@ -31,6 +31,7 @@ ul {
 .content {
     text-align: left;
     width: 100%;
+    
 }
 .contentLog {
     position: fixed;
@@ -40,7 +41,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     top: 20%;
     min-height: 390px;
     overflow: hidden;

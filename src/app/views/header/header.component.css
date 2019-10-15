@@ -1,8 +1,8 @@
 #cabeceraBienvenido{
     width: 100%;
     height: 65px;
-    border-bottom:1px solid #d7d7d7;
-    background-color: #fff;
+    /* border-bottom: 1px solid #d7d7d7; */
+    background-color:  #EFEFEF;
     z-index: 5;
     padding-top: 15px;
 }
@@ -73,6 +73,8 @@
 }
 #contentMenuBienv .menuBienvenido li{
     list-style: none;
+    margin-bottom: 18px;
+    height: 40px;
 }
 #contentMenuBienv .menuBienvenido li a{
     text-decoration: none;

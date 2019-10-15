@@ -33,8 +33,9 @@ export class CajasComponent implements OnInit {
     divBody.classList.add("white");
   }
 
-  // public toogleTitle(){
+  public toogleTitle(){
     
-  //   $(".titulo_card").slideToggle();
-  // }
+    $(".titulo_card").slideToggle();
+  }
 }
+

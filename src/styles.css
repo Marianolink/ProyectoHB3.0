@@ -17,7 +17,7 @@ body{
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    background-color:#e4e4e4;
+    background-color: #EFEFEF!important;
     color:#324a5e;
     /* -webkit-animation: fadein 1s; 
     -moz-animation: fadein 1s; 
@@ -39,7 +39,7 @@ body{
     margin-top: 30px
 }
 .white{
-    background-color: #fff;
+    background-color:  #EFEFEF;
 }
 
 .tituloEncabezado h2{

@@ -3,22 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
-import { BienvenidoComponent } from './components/bienvenido/bienvenido.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { PagarComponent } from './components/pagar/pagar.component';
-import { RecargarComponent } from './components/recargar/recargar.component';
-import { TransferirComponent } from './components/transferir/transferir.component';
-import { InvertirComponent } from './components/invertir/invertir.component';
-import { CajasComponent } from './components/cuentas/detalle-caja-ahorro-pesos/detalle-cajas-ahorro-pesos.component';
+import { HeaderComponent } from './views/header/header.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { LoginComponent } from './views/login/login.component';
+import { BienvenidoComponent } from './views/bienvenido/bienvenido.component'; 
+import { FooterComponent } from './views/footer/footer.component';
+import { PagarComponent } from './views/pagar/pagar.component';
+import { RecargarComponent } from './views/recargar/recargar.component';
+import { TransferirComponent } from './views/transferir/transferir.component';
+import { InvertirComponent } from './views/invertir/invertir.component';
+import { CajasComponent } from './views/cuentas/detalle-caja-ahorro-pesos/detalle-cajas-ahorro-pesos.component';
+import { ConsultaCuentasComponent } from './views/cuentas/consulta-cuentas/consulta-cuentas.component';
+import { CuentasAhorroPesosWidgetComponent } from './views/cuentas/cuentas-ahorro-pesos-widget/cuentas-ahorro-pesos-widget.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
+    DashboardComponent,
     LoginComponent,
     BienvenidoComponent,
     FooterComponent,
@@ -26,7 +28,9 @@ import { CajasComponent } from './components/cuentas/detalle-caja-ahorro-pesos/d
     RecargarComponent,
     TransferirComponent,
     InvertirComponent,
-    CajasComponent
+    CajasComponent,
+    ConsultaCuentasComponent,
+    CuentasAhorroPesosWidgetComponent
   ],
   imports: [
     BrowserModule,
