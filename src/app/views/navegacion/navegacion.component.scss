@@ -1,0 +1,40 @@
+@import "src/scss/custom.scss";
+
+.fatherIcon .big{
+    position: relative;
+    top: -3px;
+}
+
+.lnk-top-bar {
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+  }
+
+.lnk-notification {
+  text-decoration: none;
+}
+
+.lnk-logout-button {
+  line-height:1.5;
+}
+
+.lnk-logout-button:hover {
+  background-color: #58c3b5;
+  color: #fff;
+}
+
+.text-dark:hover svg path,
+.text-dark:hover{
+  stroke:#fff;
+  color:#fff;
+}
+
+
+
+.lnk-menu-option:hover {
+  background: rgb(2,58,130);
+  background: linear-gradient(0deg, rgba(2,58,130,1) 0%, rgba(88,195,181,1) 100%);
+  color: #fff!important;
+}
+  

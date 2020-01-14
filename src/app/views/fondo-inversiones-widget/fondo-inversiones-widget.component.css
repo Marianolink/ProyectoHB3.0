@@ -1,0 +1,182 @@
+a{
+    color:#324a5e;
+}
+
+.subtitulo h3{
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.cardDashboard .boxDash{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 25px;
+    background: #fbfbfb;
+    border-radius: 15px;
+}
+.cardDashboard .wrong-item {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cardDashboard .wrong-item:hover, .wrong-item:active {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+}
+.actualidadDashboard{
+    float: left;
+    width: 25%;
+}
+
+
+.cardDashboard .boxDash .contentDash .titulo_card{
+    float: left;
+}
+
+.cardDashboard .boxDash .contentDash .titulo_card h3 {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.cardDashboard .boxDash .contentDash .tituloPlazo h3{
+    margin-bottom: 0;
+}
+.cardDashboard .boxDash .contentDash .tituloPlazo p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.cardDashboard .boxDash .contentDash .dashFilaUno,
+.cardDashboard .boxDash .contentDash .dashFilaDos{
+    /* margin-bottom: 30px; */
+    float: left;
+}
+
+.cardDashboard .boxDash .contentDash .dashFilaDos,
+.cardDashboard .boxDash .contentDash .dashFilaDos{
+    float: right;
+}
+.cardDashboard .boxDash .contentDash .dashFilaUno h4,
+.cardDashboard .boxDash .contentDash .dashFilaDos h4{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.cardDashboard .boxDash .contentDash .dashFilaUno p{
+    color: #9d9d9d;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.cardDashboard .boxDash .contentDash .proxCuotas{
+    margin-bottom: 0;
+}
+.cardDashboard .boxDash .contentDash .proxCuotas h4{
+    font-size: 14px;
+    margin-bottom:10px;
+}
+.cardDashboard .boxDash .contentDash .proxCuotas .monto{
+    font-size:18px;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+}
+.cardDashboard .boxDash .contentDash .proxCuotas .vencimiento{
+    font-size:14px;
+}
+
+.cardDashboard .boxDash .contentDash .boxDashVerTodas{
+    float: right;
+}
+.cardDashboard .boxDash .contentDash .boxDashVerTodas a{
+    display: block;
+    color: #6a6a6a;
+    margin-top: 8px;
+    font-size: 11px;
+    text-decoration: none;
+}
+.cardDashboard .boxDash .contentDash .boxDashVerTodas a:hover{
+    color: #333333;
+}
+
+
+
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .dashPaddingX{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+        padding-top: 35px;
+    }
+    .cardDashboard .boxDash .contentDash .titulo_card h3{
+        font-size: 16px;
+    }
+    .cardDashboard .boxDash .contentDash .tituloPlazo p{
+        font-size: 13px;
+    }
+    .cardDashboard .boxDash .contentDash .boxDashVerTodas a{
+        font-size: 10px;
+        margin-top: 21px;
+    }
+    .cardDashboard .boxDash .contentDash .proxCuotas .monto{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .cardDashboard .boxDash .contentDash .proxCuotas .vencimiento{
+        font-size:11px;
+    }  
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .dashPaddingX{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+        padding-top: 35px;
+    }
+    .cardDashboard .boxDash .contentDash .titulo_card h3{
+        font-size: 16px;
+    }
+    .cardDashboard .boxDash .contentDash .tituloPlazo p{
+        font-size: 13px;
+    }
+    .cardDashboard .boxDash .contentDash .boxDashVerTodas a{
+        font-size: 10px;
+        margin-top: 21px;
+    }
+    .cardDashboard .boxDash .contentDash .proxCuotas .monto{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .cardDashboard .boxDash .contentDash .proxCuotas .vencimiento{
+        font-size:11px;
+    }
+}
+@media (min-width: 1367px) and (max-width: 1439px) {
+    .dashPaddingX{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+        padding-top: 35px;
+    }
+    .cardDashboard .boxDash .contentDash .titulo_card h3{
+        font-size: 16px;
+    }
+    .cardDashboard .boxDash .contentDash .tituloPlazo p{
+        font-size: 13px;
+    }
+    .cardDashboard .boxDash .contentDash .boxDashVerTodas a{
+        font-size: 10px;
+        margin-top:21px;
+    }
+    .cardDashboard .boxDash .contentDash .proxCuotas .monto{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .cardDashboard .boxDash .contentDash .proxCuotas .vencimiento{
+        font-size:11px;
+    }
+}

@@ -1,31 +1,19 @@
-<div class="slider-box">        
-    <div class="slider-card-1 cuurent-act-card-border wrong-item item pr-3">
-        <div class="col-xl-10 float-left pr-0">
-            <div class="contentCajas">
-                <h2>Caja de ahorro <br>
-                en pesos</h2>
-            </div>   
-        </div>
-        <div class="col-xl-2 float-right">
-            <a href="">
-                <i class="fas fa-star"></i>
-            </a>
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="col-12 contentCajas">
-            <h3>Nº 02300003424234456</h3>
-            <h4>Saldo</h4>
-            <p>U$S 1.669,57</p>
+    <div class="slider-card">
+                    <span class="detail-caja mt-3">Saldo U$S</span>
+                    <p class="amount mt-n1">18.669,57</p>
+                    <h3 class="m-0 mt-2">Caja de ahorro <br>
+                        en pesos</h3>
+                    <span class="detail-caja mt-2">Nº 02300003424234456</span>           
+                    <span (click)="copied()" id="copy" class="copy mt-3 ml-5">
+                            <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17">
+                                <g fill="none" fill-rule="evenodd" stroke="#58C3B5" stroke-width="1.2">
+                                    <path d="M10.77 5.572v9.122A1.3 1.3 0 0 1 9.475 16H2.371a1.3 1.3 0 0 1-1.294-1.306V5.572A1.3 1.3 0 0 1 2.37 4.267h7.105a1.3 1.3 0 0 1 1.293 1.305z"/>
+                                    <path d="M4 2.335C4 1.598 4.598 1 5.335 1h7.33C13.402 1 14 1.598 14 2.335v9.33c0 .737-.598 1.335-1.335 1.335"/>
+                                </g>
+                            </svg>
+                            {{copiar}}
+                    </span>   
+            
         </div>
 
-        <div class="clearfix"></div>
-
-        <div class="col-12 copiarDatosCuenta">
-            <a href="">Copiar tus datos bancarios</a>   
-        </div>
-    </div>       
-</div>      
-
-
+    

@@ -1,0 +1,101 @@
+<!-- Modal -->
+<div [@modalFade]="modalFade" class="modal fade" id="exampleModalCenter" [ngClass]="{'show':showModal}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"  (click)="showModal=false" (click)="toggleCross()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <app-recargar-modal></app-recargar-modal>
+      </div>
+    </div>
+  </div>  
+
+
+<section class="cardDashboard">
+    <div class="boxDash wrong-item item">
+            <div class="contentDash"> 
+                <div class="col-6 titulo_card p-0">
+                    <h3>Tus recargas</h3>
+                </div>
+
+                <div class="col-6 boxDashOrderBy p-0">
+                    <a href="" class="float-right">Ordenar por fecha <i _ngcontent-pgi-c1="" class="fas fa-caret-down" aria-hidden="true"></i></a>
+                </div>
+                
+                <div class="clear"></div>
+                <hr class="hr-strong">
+                <div id="personal-success" class="alert alert-success alert-dismissible fade show" role="alert">
+                        Personal se ha borrado correctamente
+                        <button type="button" class="close" (click)="close(alert)" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                <div class="liRecarga personal">
+                    <div class="liRecargaHover">
+                        <div class="col-12 liOverlay">
+                            <span (click)="alertMensaje(info)">Eliminar</span>
+                            <span>Recargar</span>
+                        </div>
+                    </div>
+                    <div class="col-2 dashFilaUno px-0">
+                        <img src="assets/images/personal.jpg" alt="">
+                    </div>
+                    <div class="col-6 dashFilaUno px-0">
+                        <h4> Personal Mamá</h4>
+                        <p>Telefonía Celular</p>
+                    </div>
+                    <div class="col-4 dashFilaDos pr-0 text-right">
+                        <h4>$3.120,80</h4>
+                        <p>17 julio 2019</p>
+                    </div>
+                </div>
+                <hr class="personal">
+                <div class="liRecarga">
+                        <div class="liRecargaHover">
+                            <div class="col-12 liOverlay">
+                                <span>Eliminar</span>
+                                <span  (click)="showModal=true" (click)="toggleModal()">Recargar</span>
+                            </div>
+                        </div>
+                        <div class="col-2 dashFilaUno px-0">
+                            <img src="assets/images/claro.jpg" alt="">
+                        </div>
+                        <div class="col-6 dashFilaUno px-0">
+                            <h4>Claro</h4>
+                            <p>Telefonía Celular</p>
+                        </div>
+                        <div class="col-4 dashFilaDos pr-0 text-right">
+                            <h4>$ 500</h4>
+                            <p>20 julio 2019</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="liRecarga">
+                            <div class="liRecargaHover">
+                                <div class="col-12 liOverlay">
+                                    <a href="">Eliminar</a>
+                                    <a href="">Recargar</a>
+                                </div>
+                            </div>
+                            <div class="col-2 dashFilaUno px-0">
+                                <img src="assets/images/sube.png" alt="">
+                            </div>
+                            <div class="col-6 dashFilaUno px-0">
+                                <h4>SUBE</h4>
+                                <p>Transporte Público</p>
+                            </div>
+                            <div class="col-4 dashFilaDos pr-0 text-right">
+                                <h4>$ 604,45</h4>
+                                <p>5 agosto 2019</p>
+                            </div>
+                        </div>
+                        <hr>
+                <div class="clear"></div>
+                <br><br>
+               
+
+            </div>   
+        </div>
+</section>

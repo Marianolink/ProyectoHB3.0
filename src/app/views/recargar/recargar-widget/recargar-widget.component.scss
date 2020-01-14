@@ -1,0 +1,391 @@
+@import "src/app/views/recargar/recargar.component.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+img{
+    height: 42px;
+}
+
+.modal h5{
+    font-size:24px;
+}
+
+.modal h6{
+    color: #c0c0c0;
+    font-size:12px;
+    margin-bottom: 0px;
+}
+
+.modal-header{
+    padding: 1rem 1rem 0 !important;
+    border-bottom:none !important;
+
+}
+
+.modal-footer{
+    justify-content: space-between !important;
+    border-top:none !important;
+}
+
+.alert.mostrar{
+    display:none;
+}
+
+.add{
+    display:block !important;
+}
+
+.alert{
+    display: none;
+}
+
+.modal-dialog{
+    box-shadow: 10px 10px 10px 0 rgba(87, 87, 87, 0.5) !important;
+}
+  
+.modal{
+    transition:all ease 400ms;
+    text-align: center;
+}
+.modal.show{ 
+    display: block;
+    background-color:rgba(0, 0, 0, 0.65);
+}
+
+.remove{
+    display: none !important;
+}
+
+hr{
+    height: 1px !important;
+    background-color: #dfe3e8 !important;
+    border: none !important;
+}
+
+.hr-strong{
+    height: 2px !important;
+    background-color: #b9b9b9 !important;
+}
+
+h4{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+p{
+    font-size: 12px !important;
+    font-weight: normal !important;
+    color: #9a9a9a !important;
+}
+
+a{
+    color:#324a5e;
+}
+
+.boxDashOrderBy i{
+    margin-left:4px;
+}
+
+
+.contentDash{
+    padding: 25px 25px 0 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.cardDashboard .boxDash{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+.cardDashboard .wrong-item {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cardDashboard .wrong-item:hover, .wrong-item:active {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+}
+.actualidadDashboard{
+    float: left;
+    width: 25%;
+}
+.cardDashboard .boxDash{
+    width: 100%;   
+    height: 100%;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: flex;
+}
+.cardDashboard .boxDash .color_1{
+    border-left:15px solid #e1e1e1;
+}
+
+.cardDashboard .boxDash .contentDash .titulo_card{
+    float: left;
+}
+.cardDashboard .boxDash .contentDash .boxDashVerTodas a{
+    display: block;
+    color: #6a6a6a;
+    margin-top: 8px;
+    font-size: 11px;
+    text-decoration: none;
+}
+.cardDashboard .boxDash .contentDash .boxDashVerTodas a:hover{
+    color: #333333;
+}
+.cardDashboard .boxDash .contentDash .titulo_card h3{ 
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.cardDashboard .boxDash .contentDash .tituloPlazo h3{
+    margin-bottom: 0;
+}
+.cardDashboard .boxDash .contentDash .tituloPlazo p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.cardDashboard .boxDash .contentDash .boxDashVerTodas{
+    float: right;
+}
+
+.cardDashboard .boxDash .contentDash .dashFilaUno,
+.cardDashboard .boxDash .contentDash .dashFilaDos{
+    /* margin-bottom: 30px; */
+    float: left;
+}
+.cardDashboard .boxDash .contentDash hr {
+    background:#979797;
+    width: 100%;
+    margin: 15px 0;
+}
+.cardDashboard .boxDash .contentDash .dashFilaDos,
+.cardDashboard .boxDash .contentDash .dashFilaDos{
+    float: right;
+}
+.cardDashboard .boxDash .contentDash .dashFilaUno h4,
+.cardDashboard .boxDash .contentDash .dashFilaDos h4{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.cardDashboard .boxDash .contentDash .dashFilaUno p{
+    color: #9d9d9d;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.cardDashboard .boxDash .contentDash .dashFilaDos p{
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 0;
+}
+.cardDashboard .boxDash .contentDash .proxCuotas{
+    margin-bottom: 0;
+}
+.cardDashboard .boxDash .contentDash .proxCuotas h4{
+    font-size: 14px;
+    margin-bottom:10px;
+}
+.cardDashboard .boxDash .contentDash .proxCuotas .monto{
+    font-size:18px;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+}
+.cardDashboard .boxDash .contentDash .proxCuotas .vencimiento{
+    font-size:14px;
+}
+
+.cardDashboard .boxDash  .cotizacionDolarHoy .dashFilaUnoCompra{ 
+    float: left;
+    padding-top: 10px
+}
+.cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaUnoCompra > h4{
+    font-size: 16px!important;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaUnoCompra > span{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+/* .cardDashboard .boxDash .cotizacionDolarHoy .venta{
+    padding-right: 25px;
+} */
+.cardDashboard .boxDash  .cotizacionDolarHoy .dashFilaDosVenta{   
+    float: right;
+    padding-top: 10px
+}
+.cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaDosVenta > h4{
+    font-size: 16px!important;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.cardDashboard  .boxDash .cotizacionDolarHoy .dashFilaDosVenta > span{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno{
+    width: 100%;
+}
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno .titulo_servicio{
+    width: 48%;
+    float: left;
+}
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno .titulo_servicio span{
+    display: block;
+    font-size: 15px;
+    color: #3d3d3d;
+    margin-top: 3px;
+}
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno .monto_servicio{
+    float: right;
+}
+.cardDashboard .boxDash .card_estado_servicios .dashFilaUno .monto_servicio span{
+    font-size: 18px;
+}
+.productoPre i{
+    font-size: 80px;
+    color: #000;
+}
+
+
+
+.cardDashboard .boxDash .contentDash .liRecarga{
+    padding:0px 12px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cardDashboard .boxDash .contentDash .liRecarga:hover{
+    
+}
+
+.cardDashboard .boxDash .contentDash .liRecarga .liRecargaHover{
+    
+    display: none;
+    position: absolute;
+    color: white;
+    z-index: 90;
+    width: 100%;
+    left: 0px;
+}
+.cardDashboard .boxDash .contentDash .liRecarga:hover .liRecargaHover{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 25px;   
+}
+.cardDashboard .boxDash .contentDash .liRecarga .liRecargaHover .liOverlay{
+    transition:background-color ease-out 180ms, padding ease-out 260ms;
+    background-color: rgba(0,0,0,0);
+    text-align:right;
+    z-index: 99;
+    padding:25px 20px;
+}
+
+.cardDashboard .boxDash .contentDash .liRecarga .liRecargaHover:hover .liOverlay{
+    background-color: rgba(106, 106, 106, 0.9);
+    padding:24px 30px;
+}
+
+.cardDashboard .boxDash .contentDash .liRecarga .liRecargaHover span{
+    color:white !important;
+    margin:0 6px;
+}
+.cardDashboard .boxDash .contentDash .liRecarga .liRecargaHover span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .dashPaddingX{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+        padding-top: 35px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaUno p{
+        font-size: 10px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaDos p{
+        font-size: 14px;
+    }
+    .cardDashboard .boxDash .contentDash .titulo_card h3{
+        font-size: 16px;
+    }
+    .cardDashboard .boxDash .contentDash .boxDashVerTodas a{
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaUno h4,
+    .cardDashboard .boxDash .contentDash .dashFilaDos h4{
+        font-size: 14px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .dashPaddingX{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+        padding-top: 35px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaUno p{
+        font-size: 10px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaDos p{
+        font-size: 14px;
+    }
+    .cardDashboard .boxDash .contentDash .titulo_card h3{
+        font-size: 16px;
+    }
+    .cardDashboard .boxDash .contentDash .boxDashVerTodas a{
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaUno h4,
+    .cardDashboard .boxDash .contentDash .dashFilaDos h4{
+        font-size: 14px;
+    }
+}
+@media (min-width: 1367px) and (max-width: 1439px) {
+    .dashPaddingX{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+        padding-top: 35px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaUno p{
+        font-size: 10px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaDos p{
+        font-size: 14px;
+    }
+    .cardDashboard .boxDash .contentDash .titulo_card h3{
+        font-size: 16px;
+    }
+    .cardDashboard .boxDash .contentDash .boxDashVerTodas a{
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    .cardDashboard .boxDash .contentDash .dashFilaUno h4,
+    .cardDashboard .boxDash .contentDash .dashFilaDos h4{
+        font-size: 14px;
+    }
+}

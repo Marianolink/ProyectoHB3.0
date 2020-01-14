@@ -1,0 +1,176 @@
+a{
+    color:#324a5e;
+}
+
+
+
+.cardDashboard .vencimientos{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 25px;
+    background: #fbfbfb;
+    border-radius: 15px;
+    padding: 25px 25px;
+}
+.cardDashboard .wrong-item {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cardDashboard .wrong-item:hover, .wrong-item:active {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+}
+.actualidadDashboard{
+    float: left;
+    width: 25%;
+}
+
+
+.cardDashboard .vencimientos   .titulo_card{
+    float: left;
+}
+.cardDashboard .vencimientos   .vencimientosVerTodas a{
+    display: block;
+    color: #6a6a6a;
+    margin-top: 8px;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.titulo_card h3{ 
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.cardDashboard .vencimientos   .tituloPlazo h3{
+    margin-bottom: 0;
+}
+.cardDashboard .vencimientos   .tituloPlazo p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.cardDashboard .vencimientos   .dashFilaUno,
+.cardDashboard .vencimientos   .dashFilaDos{
+    /* margin-bottom: 30px; */
+    float: left;
+    width: 100%;
+}
+.cardDashboard .vencimientos   hr {
+    background:#979797;
+    width: 100%;
+    margin: 15px 0;
+}
+.cardDashboard .vencimientos   .dashFilaDos,
+.cardDashboard .vencimientos   .dashFilaDos{
+    float: right;
+}
+.cardDashboard .vencimientos   .dashFilaUno h4,
+.cardDashboard .vencimientos   .dashFilaDos h4{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.cardDashboard .vencimientos   .dashFilaUno p{
+    color: #9d9d9d;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.cardDashboard .vencimientos   .dashFilaDos p{
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 0;
+}
+.cardDashboard .vencimientos   .proxCuotas{
+    margin-bottom: 0;
+}
+.cardDashboard .vencimientos   .proxCuotas h4{
+    font-size: 14px;
+    margin-bottom:10px;
+}
+.cardDashboard .vencimientos   .proxCuotas .monto{
+    font-size:18px;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+}
+.cardDashboard .vencimientos   .proxCuotas .vencimiento{
+    font-size:14px;
+}
+
+.cardDashboard .vencimientos  .cotizacionDolarHoy .dashFilaUnoCompra{ 
+    float: left;
+    padding-top: 10px
+}
+.cardDashboard  .vencimientos .cotizacionDolarHoy .dashFilaUnoCompra > h4{
+    font-size: 16px!important;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.cardDashboard  .vencimientos .cotizacionDolarHoy .dashFilaUnoCompra > span{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.cardDashboard .vencimientos .cotizacionDolarHoy .venta{
+    padding-right: 25px;
+}
+.cardDashboard .vencimientos  .cotizacionDolarHoy .dashFilaDosVenta{   
+    float: right;
+    padding-top: 10px
+}
+.cardDashboard  .vencimientos .cotizacionDolarHoy .dashFilaDosVenta > h4{
+    font-size: 16px!important;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.cardDashboard  .vencimientos .cotizacionDolarHoy .dashFilaDosVenta > span{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.cardDashboard .vencimientos .card_estado_servicios .dashFilaUno{
+    width: 100%;
+}
+.cardDashboard .titulo_servicio{
+    width: 48%;
+    float: left;
+}
+.cardDashboard .titulo_servicio span{
+    display: block;
+    font-size: 15px;
+    color: #3d3d3d;
+    margin-top: 3px;
+}
+.cardDashboard .monto_servicio{
+    float: right;
+}
+.cardDashboard .monto_servicio span{
+    font-size: 16px;
+}
+.cardDashboard .servicio .progress {
+    width: 100%;
+    margin-top: 3px;
+    height: 5px!important;
+    background: #ced4da;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.cardDashboard .servicio .progress_bar {
+    height: 7px;
+    float: left;
+    width: 58%;
+    background: rgb(254,160,0);
+    background: linear-gradient(-90deg, rgba(254,160,0,1) 0%, rgba(59,183,143,1) 100%);
+    -webkit-animation: bar 2s;
+    border-radius: 5px;
+}

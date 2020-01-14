@@ -1,0 +1,129 @@
+$primary: #58C3B5;
+$secondary: #3791A9;
+$green:#68EBBD;
+$lime: #B8CF38;
+$yellow: #FFCE02;
+$white:    #fff ;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef ;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #ADB5BD;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #6C757D;
+$gray-900: #343A40;
+$black: #000;
+$dark: $gray-900;
+
+
+
+
+$border-primary:$primary;
+
+
+
+$detail: #ADB5BD;
+$disable: #CED4DA;
+
+
+$success:#28a745;
+$error:#dc3545;
+
+
+$primary-gradient:linear-gradient(255deg, #023a82 119%, #63d9ca -5%);
+
+$margin-top:20px;
+
+$hb-margin:1.25rem;
+
+
+/*---Estilos Personalizados---*/
+
+.title{color:$gray-900 !important;}
+.subtitle{color:$gray-800 !important;}
+
+
+.font-medium{
+    font-weight:600 !important;
+}
+
+.bkg-gradient{
+    background: linear-gradient(90deg, rgba(99,217,202,1) 0%, rgba(2,58,130,1) 100%) !important;
+}
+
+
+/*----------MARGIN-----------*/
+.mt-hb{
+    margin-top:$hb-margin !important;
+}
+.mb-hb{
+    margin-bottom:$hb-margin !important;
+}
+
+
+
+/*
+$font-family-sans-serif: 'Rubik', sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 600;
+$font-family-monospace: 'Roboto Mono', monospace;
+$enable-responsive-font-sizes: true;
+$font-family-base: 'Lato', sans-serif;
+$font-weight-bolder: 900;
+$enable-shadows: true;
+$input-focus-box-shadow: false;
+$input-box-shadow: false;
+$btn-box-shadow: false;
+$box-shadow: 0 .1rem 1rem rgba($black, .15);
+$box-shadow-lg: 0 .1rem 3rem rgba($black, .175);
+$box-shadow-sm: 0 .1rem 1rem rgba($black, .075);
+$input-btn-focus-box-shadow: false;
+$btn-focus-box-shadow: false;
+$btn-active-box-shadow: false;
+$input-focus-border-color: lighten($gray-800, 25%);
+$headings-color: $gray-900;
+$btn-link-disabled-color: $gray-400;
+$nav-link-disabled-color: $gray-400;
+$pagination-disabled-color: $gray-400;
+$pagination-disabled-border-color: $gray-400;
+$list-group-disabled-color: $gray-400;
+$custom-select-disabled-color: $gray-400;
+$custom-select-disabled-bg: $gray-400;
+$dropdown-link-disabled-color: $gray-400;
+$custom-range-thumb-disabled-bg: $gray-400;
+$custom-control-label-disabled-color: $gray-400;
+$custom-control-indicator-checked-color: $primary;
+$custom-control-indicator-checked-border-color: $primary;
+$custom-control-indicator-checked-bg: $primary;
+$custom-control-indicator-checked-box-shadow: $primary;
+$custom-control-indicator-border-color: lighten($gray-800, 50%);
+$custom-control-indicator-focus-border-color: lighten($gray-800, 50%);
+$custom-control-indicator-active-bg: lighten($gray-800, 50%);
+$custom-control-indicator-active-border-color: lighten($gray-800, 50%);
+$nav-pills-link-active-color: $gray-100 !important;
+$nav-pills-link-active-bg: $primary;
+*/
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$font-sizes: () !default;
+$font-sizes: map-merge((
+  base: $font-size-base,
+  lg: $font-size-lg,
+  sm: $font-size-sm,
+  0: 8px,
+  1: 10px,
+  2: 12px,
+  3: 14px,
+  4: $font-size-base,
+  5: 18px,
+  6: 20px,
+  7: 22px
+), $font-sizes);
+
+@each $prop , $value in $font-sizes {
+    .text-size-#{$prop} {
+        font-size: $value;
+    }
+  }

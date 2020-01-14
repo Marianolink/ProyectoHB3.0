@@ -1,22 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-login',
-//   templateUrl: './login.component.html',
-//   styleUrls: ['./login.component.css']
-// })
-// export class LoginComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 // import { $ } from 'protractor';
@@ -24,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
 
@@ -32,9 +13,11 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {}
 
+  
   login(){
     this.router.navigate(['/home']);
   }
+  
   registro(){
 
     const div2 = document.getElementById("elementIngreso");

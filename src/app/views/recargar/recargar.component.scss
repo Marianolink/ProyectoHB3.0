@@ -1,0 +1,32 @@
+h3{
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    color: #6a6a6a;
+    margin:0 !important;
+}
+
+aside{
+    font-size: 16px;
+    color: #6a6a6a;
+
+}
+
+aside .aside-nueva, aside .aside-info{
+    border-radius: 4px;
+    box-shadow: 0 0 5px 0 rgba(205, 205, 205, 0.5);
+    background-color:#ffffff;
+    padding:20px; 
+}
+
+aside .aside-info{
+    padding:100px 20px;  
+}
+
+.boxDashOrderBy{
+    float:right;
+    font-size:12px;
+}

@@ -1,0 +1,55 @@
+        <h6>PASO {{count}} DE 3</h6>
+        <h5 class="modal-title" id="exampleModalLongTitle">Recargar <strong>Claro</strong></h5>
+
+        <div class="modal-body">
+                <div [@paso0]="paso0" class="paso0">
+                        <div class="col-2"><h6>CERO</h6></div>
+                        <i _ngcontent-pgi-c1="" class="fas fa-caret-down" aria-hidden="true"></i>
+                        <select #select (change)="onChange()">
+                                <option value ="1">CA $ …402940</option>
+                                <option value ="2">CA $ 640290</option>
+                                <option value ="3">CA $ …900543</option>
+                        </select>
+                </div>
+                <div [@paso1]="paso1" class="paso1">
+                                <div class="col-2"><h6>UNO</h6></div>
+                                <i _ngcontent-pgi-c1="" class="fas fa-caret-down" aria-hidden="true"></i>
+                                        <select #select (change)="onChange()">
+                                                <option value ="1">$1000</option>
+                                                <option value ="2">$500</option>
+                                                <option value ="3">$100</option>
+                                        </select>
+                </div>
+
+                <div [@paso2]="paso2" class="paso2">
+                                <div class="col-2"><h6>DOS</h6></div>
+                                <i _ngcontent-pgi-c1="" class="fas fa-caret-down" aria-hidden="true"></i>
+                                        <select #select (change)="onChange()">
+                                                <option value ="1">$1000</option>
+                                                <option value ="2">$500</option>
+                                                <option value ="3">$100</option>
+                                        </select>
+                </div>
+                <div [@paso3]="paso3" class="paso3">
+                        <div class="col-2"><h6>TRES</h6></div>
+                        <i _ngcontent-pgi-c1="" class="fas fa-caret-down" aria-hidden="true"></i>
+                                <select #select (change)="onChange()">
+                                        <option value ="1">$1000</option>
+                                        <option value ="2">$500</option>
+                                        <option value ="3">$100</option>
+                                </select>
+                </div>
+                <div [@end]="end" class="end">
+                        <div class="col-2"><h6>Final</h6></div>
+                        ESTÁ POR TRANSFERIR
+                </div>
+                <input id="counter" name="counter" value="0" type="text">
+                
+
+        </div>
+
+        
+        <div class="modal-footer">
+                        <button [@back]="back" type="button" class="btn back" (click)="toggleBack()" data-dismiss="modal"><i-feather name="arrow-left" class="big" style="stroke-width:1px;"></i-feather> Volver</button>
+                        <button type="button" class="btn btn-secondary" (click)="toggleState()" >Continuar</button>
+        </div>

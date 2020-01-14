@@ -6,7 +6,7 @@ import { $ } from 'protractor';
 @Component({
   selector: 'app-home',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
 

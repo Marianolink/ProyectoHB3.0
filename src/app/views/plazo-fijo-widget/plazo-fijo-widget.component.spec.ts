@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { PlazoFijoWidgetComponent } from './plazo-fijo-widget.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('PlazoFijoWidgetComponent', () => {
+  let component: PlazoFijoWidgetComponent;
+  let fixture: ComponentFixture<PlazoFijoWidgetComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
+      declarations: [ PlazoFijoWidgetComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(PlazoFijoWidgetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

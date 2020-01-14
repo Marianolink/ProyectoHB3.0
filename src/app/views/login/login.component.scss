@@ -1,4 +1,4 @@
-
+@import "src/scss/custom.scss";
 
 img{
     border:0;
@@ -53,12 +53,31 @@ ul {
     height: 100%;
     position: absolute;
 }
+.login .pass{
+    margin-bottom: 15px;
+}
 .gris {
-    background-color: #333333;
+
     width: 260px;
+    height: 408px;
     transition: 1.0s ease all;
     -moz-transition: 1.0s ease all;
     -webkit-transition: 1.0s ease all;
+    border-radius: 20px 0 0 20px;
+}
+.back_registro{
+    background-image:
+    linear-gradient(to bottom, rgba(124, 5, 255,0.5), rgba(63, 5, 127,0.5)),
+    url('https://picsum.photos/id/700/200/300');
+   background-size: cover;
+   border-radius: 0px 20px 20px 0;
+}
+.back_login{
+    background-image:
+    linear-gradient(to bottom, rgba(124, 5, 255,0.5), rgba(63, 5, 127,0.5)),
+    url('https://picsum.photos/id/700/200/300');
+   background-size: cover;
+   border-radius: 20px 0px 0px 20px;
 }
 .contentForm{
     position: relative;
@@ -72,7 +91,7 @@ ul {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    padding: 18px;
+    padding: 18px 50px;
     position: relative;
 }
 .elementosSub {
@@ -99,7 +118,7 @@ ul {
 .btn_login {
     border: 1px solid #ffffff;
     padding: 10px 0px;
-    border-radius: 3px;
+    border-radius: 10px;
     display: inline-block;
     cursor: pointer;
     transition: all 0.2s ease 0s;
@@ -117,22 +136,38 @@ ul {
 .btn_login2 {
     border: 1px solid rgba(205, 205, 205, 0.5);
     background-color: rgba(205, 205, 205, 1);
-    border-radius: 3px;
+    border-radius: 7px;
     display: inline-block;
     cursor: pointer;
-    transition: all 0.2s ease 0s;
-    font-size: 12px;
+    font-size: 13px;
     color: #fff;
-    margin: 15px 0;
-    padding: 10px 20px;
-    float:right;
+    padding: 10px 25px;
+    float: right;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+
 }
+.btn_login2:hover {
+    color: #fff;
+    background: rgb(114,6,233);
+    background: linear-gradient(7deg, rgba(114,6,233,1) 0%, rgba(81,3,166,1) 35%);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
 .ttLogin {
-    color: #333333;
+    color: #6c757d;
     font-size: 24px;
     font-weight: 400;
     text-align: left;
     margin-bottom: 5px;
+    position: relative;
+    top: -16px;
+}
+.ttLogin strong{
+    color: #5103a6;
 }
 .bajadaLogin{
     color: #9d9d9d;
@@ -144,28 +179,29 @@ ul {
 
 .group {
     position: relative;
-    margin-top: 20px;
     text-align: right;
 }
 input {
     font-size: 14px;
-    padding: 15px 0px 2px 0px;
+    padding: 5px 9px 5px 15px;
     display: block;
     color: #100f12;
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #cccccc;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
     background-color: transparent;
+    margin-top: 30px;
 }
 label {
-    color: #d9d9d9;
-    font-size: 14px;
-    font-weight: normal;
+    color: #6c757d;
+    font-size: 13px;
+    font-weight: bold;
     position: absolute;
     pointer-events: none;
-    left: 0px;
-    top: 10px;
+    left: 12px;
+    top: -25px;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
@@ -174,8 +210,11 @@ label {
 input:focus ~ label, input:valid ~ label {
     top: 0px;
     font-size: 12px;
-    color: #333333;
-    text-transform: uppercase;
+    color: #6c757d;
+    left: 0;
+    right: 0;
+    top: 7px;
+    font-weight: normal;
 }
 .error {
     color: red;
@@ -193,6 +232,7 @@ input:focus{
     font-size: 13px;
     left: 0;
     right: 0;
+    color: #5103a6;
 }
 .blanco{
     color:#fff;
@@ -282,34 +322,32 @@ input:focus{
 
 
 /*STYLE AGREGADOS POR MARIANO */
+.ingreso_hb{
+    margin-top: 60px;
+}
 #validacion{
     margin-top: 15px;
+    left: 0;
+    right: 0;
 }
-#texto_validation{
-    width: 47%;
+#teclado_virtual{
     float: left;
 }
 #number_validation{
     width: 53%;
     float: left;  
 }
-#texto_validation p{
-    text-align: left;
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-top: 20px;
-}
-#texto_validation small{
-    text-align: left;
+
+#teclado_virtual small{
     font-size: 13px;
     display: block; 
+    margin-top: 8px;
 }
 
 .progress {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: darken($mute, 33%);
     padding-top: 22px;
     float: right;
  }
@@ -338,5 +376,58 @@ input:focus{
     z-index: 1000;
 }
 .is-active {
-    color: $active;
+    
+}
+
+.checkbox-custom, .radio-custom {
+    opacity: 0;
+   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 38px;
+    width: 147px;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    background: rebeccapurple;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+    border-radius: 3px;
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: #ccc;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd; /* focus style */
 }

@@ -1,0 +1,154 @@
+@import "src/scss/custom.scss";
+
+@-webkit-keyframes slide-down {
+    from {
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+    }
+    to {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes slide-right {
+    from {
+      -webkit-transform: translateX(200px);
+              transform: translateX(200px);
+    }
+    to {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+}
+
+#cajaPesos{
+    animation-name: slide-right;
+    animation-duration: 400ms;
+}
+
+#cajaDolares{
+    animation-name: slide-right;
+    animation-duration: 500ms;
+}
+
+#cajaAhorro{
+    animation-name: slide-right;
+    animation-duration: 600ms;
+}
+
+.cajaDol, .cajaPesos{
+    transition:all 400ms ease;
+    animation-name: slide-down;
+    animation-duration: 600ms;
+}
+
+.fade-in{
+    display: block;
+    animation-name: slide-down;
+    animation-duration: 400ms;
+    opacity:1;
+
+
+}
+
+.fade-out{
+    animation-name: slide-down;
+    animation-duration: 400ms;
+    display: none;
+    opacity:0;
+  
+}
+
+
+
+
+.modal-dialog{
+    box-shadow: 10px 10px 10px 0 rgba(87, 87, 87, 0.5) !important;
+}
+  
+.modal{
+    
+    text-align: center;
+}
+.modal.show{ 
+    display: block;
+    background-color:rgba(0, 0, 0, 0.65);
+}
+
+
+.accordion .line{
+    border-right:1px solid $disable;
+    padding-right:24px;
+}
+
+
+
+.accordion{
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.accordion .card{
+    border:0;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    box-shadow: 0 6px 5px 0 rgba(205, 205, 205, 0.5);
+}
+
+.accordionbtn{
+    cursor: pointer;
+    position: relative;
+
+}
+
+.slider1{
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.btn-slide{
+    background-color: rgb(202, 202, 202);
+    color:white;
+    border:0;
+    border-radius: 50%;
+    padding: 2px 9px 4px 12px;
+    position: absolute;
+    top: 85px;
+    right: -12px;
+}
+
+.btn-slide:focus{
+    box-shadow:0 0 0 0.2rem rgba(0, 123, 255, 0) !important;
+}
+
+.btn i{
+    color:white;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copiarDatosCuenta a{
+    display: block;
+    color: #6a6a6a;
+    font-size: 13px;
+    float: right;
+}
+
+span svg{
+    transform:scale(1.4);
+}
+span{
+    cursor: pointer;
+}
+
+.cardAside hr{
+    margin:0;
+}
+
+

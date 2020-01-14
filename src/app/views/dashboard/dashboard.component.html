@@ -1,308 +1,82 @@
 <section id="content-general">
     <div class="tituloEncabezado">
-        <div class="col-6 float-left">
-            <div class="tituloEncabezado">
-                <h2>Estás en <strong>Inicio</strong></h2>        
+        <div class="row">
+            <div class="col-6 float-left">
+                <div class="mb-hb">
+                    <h2>Estás en <strong>Inicio</strong></h2>        
+                </div>
             </div>
-        </div>
-        <div class="col-6 float-right">
-            <a href="" class="float-right configuracion_inicio">Configurar tu inicio</a>
+            <div class="col-6 float-right">
+                <a href="" class="float-right configuracion_inicio badge badge-pill ml-3 px-3 border border-dark text-uppercase text-dark text-size-2 lnk-logout-button bg-transparent">Configurar tu inicio</a>
+            </div>
         </div>
     </div>
 
-    <div class="clearfix"></div>
 
-    <div class="cardDashboard">
+
+    <div class="cardDashboard"> 
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 pb-xl-3 dashPaddingX">
-                <a href="" routerLink="/cuentas/cajas">
-                    <div class="boxDash wrong-item item">
-                        <div class="linea_vertical color_1">
-                            <div class="contentDash dashPaddingX">
-                                <div class="titulo_card">
-                                    <h3>Cuentas</h3>
-                                </div>
-                                <!-- <button (click) ="toogleTitle()">boton 1</button> -->
-                                <div class="boxDashVerTodas">
-                                    <a href="" routerLink="/cuentas/cajas">VER TODAS</a>
-                                </div>
-            
-                                <div class="clear"></div>
-            
-                                <div class="dashFilaUno ">
-                                    <h4>Caja de ahorro $</h4>
-                                    <p>000002345343456400</p>
-                                </div>
-                                <div class="dashFilaDos">
-                                    <p><strong>$ 45.699,90</strong></p>
-                                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 col-xl-8 mb-sm-3 mb-lg-0 pr-0">
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-sm-3 mb-lg-0  dashPaddingX">
+                                <app-widget-caja></app-widget-caja>   
+                        </div>
+                    
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-sm-3 mb-lg-0 dashPaddingX">
+                                <app-tarjetas-creditos-widget></app-tarjetas-creditos-widget>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-sm-3 mb-lg-0  dashPaddingX">
+                                <app-adelanto-haberes-widget></app-adelanto-haberes-widget>
+                        </div>
+                
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-sm-3 mb-lg-0  dashPaddingX">
+                                <app-proximos-vencimientos-widget></app-proximos-vencimientos-widget>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-sm-3 mb-lg-0  dashPaddingX">
+                                <app-plazo-fijo-widget></app-plazo-fijo-widget>
+                        </div>
+                
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-sm-3 mb-lg-0  dashPaddingX">
+                                <app-fondo-inversiones-widget></app-fondo-inversiones-widget>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 pr-0">
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-12 mb-sm-3 mb-lg-0  dashPaddingX">
+                                <app-cotizacion-dolar-widget></app-cotizacion-dolar-widget>
+                        </div>
+                                    
+                
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-12 mb-sm-3 mb-lg-0  dashPaddingX">
+                                <app-cotizacion-dolar-widget></app-cotizacion-dolar-widget>
+                        </div>
+                
+                        
                                 
-                                <div class="clear"></div>
-                                <hr>
-                                <div class="dashFilaUno">
-                                    <h4>Caja de ahorro U$S</h4>
-                                    <p>000002345343456400</p>
-                                </div>
-                                <div class="dashFilaDos">
-                                    <p><strong>U$S 1.699,57</strong></p>
-                                </div>
-                            </div>   
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 pb-xl-3 dashPaddingX">
-                <a href=""> 
-                    <div class="boxDash wrong-item item">
-                        <div class="linea_vertical color_2">
-                            <div class="contentDash dashPaddingX">
-                                <div class="titulo_card">
-                                    <h3>Tarjetas</h3>
-                                </div>
-                                <div class="boxDashVerTodas">
-                                    <a href="">VER TODAS</a>
-                                </div>
-            
-                                <div class="clear"></div>
-            
-                                <div class="dashFilaUno ">
-                                    <h4>VISA **** 6789</h4>
-                                    <p>Vence el 12/07/2019</p>
-                                </div>
-                                <div class="dashFilaDos">
-                                    <p><strong>$ 165.879,23</strong></p>
-                                    <p><strong>U$S 16,99</strong></p>
-                                </div>
-            
-                                <div class="clear"></div>
-                                <hr>
-                                <div class="dashFilaUno">
-                                    <h4>Mastercard **** 3456</h4>
-                                    <p>Vence el 03/07/2019</p>
-                                </div>
-                                <div class="dashFilaDos">
-                                    <p><strong>U$S 19,57</strong></p>
-                                    
-                                </div>
-                            </div>                
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 pb-xl-3 dashPaddingX">
-                <a href="">
-                    <div class="boxDash wrong-item item">
-                            <div class="linea_vertical card_estado_servicios">
-                                <div class="contentDash dashPaddingX">
-                                    <div class="titulo_card">
-                                        <h3>Tus próximos vencimientos</h3>
-                                    </div>
+                            
                 
-                                    <div class="clear"></div>
-                
-                                    <div class="dashFilaUno">
-                                        <div class="servicio_1">
-                                            <div class="titulo_servicio">
-                                                <span>NETFLIX</span>
-                                            </div>
-                                            <div class="monto_servicio">
-                                                <span><strong>$ 165,23</strong></span>
-                                            </div>
-                                            <div class="clear"></div>
-                                            <div class="progress">
-                                                <div class="progress_bar"></div>
-                                            </div>
-                                        </div>
-                                        <div class="servicio_2">
-                                            <div class="titulo_servicio">
-                                                <span>Edesur</span>
-                                            </div>
-                                            <div class="monto_servicio">
-                                                <span><strong>$ 1522,78</strong></span>
-                                            </div>
-                                            <div class="clear"></div>
-                                            <div class="progress">
-                                                <div class="progress_bar"></div>
-                                            </div>
-                                        </div>
-                                        <div class="servicio_3">
-                                                <div class="titulo_servicio">
-                                                    <span>Apple ID</span>
-                                                </div>
-                                                <div class="monto_servicio">
-                                                    <span><strong>U$S 0,999</strong></span>
-                                                </div>
-                                                <div class="clear"></div>
-                                                <div class="progress">
-                                                    <div class="progress_bar"></div>
-                                                </div>
-                                            </div>
-                                    </div>
-            
-                                </div>                
-                            </div>
-                    </div>
-                </a>
-            </div>
-        </div>    
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 pb-xl-3 dashPaddingX">
-                <a href="">
-                    <div class="boxDash wrong-item item">
-                        <div class="linea_vertical color_3">
-                            <div class="contentDash dashPaddingX">
-                                <div class="titulo_card">
-                                    <h3>Adelanto de haberes</h3>
-                                </div>        
-                                <div class="clear"></div>
-            
-                                <div class="dashFilaUno proxCuotas">
-                                    <h4>Próxima cuota</h4>
-                                    <p class="monto"><strong>$ 15.699,33</strong></p>
-                                    <p class="vencimiento">Vence el 12/10/2019</p>
-                                </div>
-                                <div class="dashFilaDos">
-                                    <figure class="chart" data-percent="50">                                            
-                                        <svg width="100" height="100">
-                                            <circle _ngcontent-blw-c2="" class="outer" cx="124" cy="66" r="50" transform="rotate(-72, 87, 98)"></circle>
-                                        </svg>
-                                    </figure>
-                                </div>
-                            </div>                
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-12 mb-sm-3 mb-lg-0  dashPaddingX">
+                            <!-- <app-productos-preaprobados-widget></app-productos-preaprobados-widget> -->
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 pb-xl-3 dashPaddingX">
-                <a href="">
-                    <div class="boxDash wrong-item item">
-                        <div class="linea_vertical color_4">
-                            <div class="contentDash dashPaddingX">
-                                <div class="titulo_card">
-                                    <h3>Préstamo personal</h3>
-                                </div>        
-                                <div class="clear"></div>
-            
-                                <div class="dashFilaUno proxCuotas">
-                                    <h4>Próxima cuota</h4>
-                                    <p class="monto"><strong>$ 23.800,90</strong></p>
-                                    <p class="vencimiento">Vence el 12/10/2019</p>
-                                </div>
-                                <div class="dashFilaDos">
-                                        <figure class="chart" data-percent="50">                                            
-                                            <svg width="100" height="100">
-                                                <circle _ngcontent-blw-c2="" class="outer" cx="124" cy="66" r="50" transform="rotate(-72, 87, 98)"></circle>
-                                            </svg>
-                                        </figure>
-                                </div>
-                            </div>                  
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 pb-xl-3 dashPaddingX">
-                <a href="">
-                    <div class="boxDash wrong-item item">
-                            <div class="linea_vertical ">
-                                <div class="contentDash cotizacionDolarHoy dashPaddingX">
-                                    
-                                    <div class="titulo_card ">
-                                        <h3>Cotización dólar</h3>
-                                    </div>        
-                                    <div class="clear"></div>
 
-                                    <div class="boxCotizacion py-3">
-                                        <div class="col-1 d-sm-none d-md-none d-lg-none col-xl-1"></div>
-                                        <div class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-5 float-left">
-                                            <div class="dashFilaUnoCompra">
-                                                <h4>Comprás a</h4>
-                                                <span>$ 41,36</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-6 col-md-6 col-lg-6 col-mxl5 float-right">
-                                            <div class="dashFilaDosVenta">
-                                                <h4>Vendés a</h4>
-                                                <span>$ 43,76</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-1 d-sm-none d-md-none d-lg-none col-xl-1"></div>
-                                    </div>
-                                </div>                  
-                            </div>
-                    </div>
-                </a>
-            </div>
-        </div>  
-        <div class="row">                 
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 pb-xl-3 dashPaddingX">
-                <a href="">
-                    <div class="boxDash wrong-item item">
-                        <div class="linea_vertical color_5">
-                            <div class="contentDash dashPaddingX">
-                                <div class="titulo_card tituloPlazo">
-                                    <h3>Plazo Fijo</h3>
-                                    <p>tradicional en pesos</p>
-                                </div>   
-                                <div class="boxDashVerTodas">
-                                        <a href="">VER TODAS</a>
-                                    </div>     
-                                <div class="clear"></div>
-            
-                                <div class="dashFilaUno proxCuotas">
-                                    <h4>Capital al vencimiento</h4>
-                                    <p class="monto"><strong>$ 8.500</strong></p>
-                                    <p class="vencimiento">Vence el 12/10/2019</p>
-                                </div>
-                            </div>                   
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 dashPaddingX">
-                <a href="">
-                    <div class="boxDash wrong-item item">
-                        <div class="linea_vertical color_6">
-                            <div class="contentDash dashPaddingX">
-                                <div class="titulo_card tituloPlazo">
-                                    <h3>Fondo común</h3>
-                                    <p>de inversión</p>
-                                </div>   
-                                <div class="boxDashVerTodas">
-                                    <a href="">VER TODAS</a>
-                                </div>     
-                                <div class="clear"></div>
-            
-                                <div class="dashFilaUno proxCuotas">
-                                    <h4>Saldo valorizado al 06/08/2019</h4>
-                                    <p class="monto"><strong>$ 118.481,56</strong></p>
-                                    <p class="vencimiento">Rescate en 24 hs.</p>
-                                </div>
-                            </div>                 
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-sm-3 mb-lg-0 px-xl-4 dashPaddingX">
-                <a href="" class="">
-                    <div class="boxDash wrong-item item">
-                        <div class="linea_vertical ">
-                            <div class="contentDash dashPaddingX">
-                                <div class="titulo_card">
-                                    <h3>Producto <br>
-                                        preaprobado</h3> 
-                                    <br>
-                                </div>   
+                </div>
+        
+        
 
-                                <div class="clear"></div>
             
-                                <div class="dashFilaUno productoPre float-right">
-                                    <i class="fas fa-cube"></i>
-                                </div>
-                            </div>                 
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+
+
+
+
     </div>
 </section>

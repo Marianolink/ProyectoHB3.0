@@ -1,22 +1,468 @@
-<section id="contentCuentas">
-    <div class="tituloEncabezado">
-        <div class="col-6 float-left">
-            <div class="tituloEncabezado">
-                <h2>Estás en <strong>Cuentas</strong></h2>        
+<!-- Modal -->
+<div [@modalFade]="modalFade" class="modal fade" id="exampleModalCenter" [ngClass]="{'show':showModal}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"  (click)="showModal=false" (click)="toggleCross()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div [@modalAlias]="modalAlias" class="modalAlias">
+            Gestionar Alias
+        </div>
+        <div [@modalCo]="modalCo" class="modalCo">
+                Cotitulares
+        </div>
+        <div [@modalPedidos]="modalPedidos" class="modalPedidos">
+                Pedidos chequeras
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+<section id="content-general">
+        <div class="tituloEncabezado">
+            <div class="row">
+                <div class="col-6 float-left">
+                    <div class="mb-hb">
+                        <h2>Estás en <strong>cuentas</strong></h2>        
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    
 
-    <div class="clearfix"></div>
+    
+        <div class="cardDashboard"> 
+            <div class="row p-0 m-0 d-flex justify-content-between">
+    
+                        <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-0 col-dash">
+                            <div class="slidecontainer">       
+                                <div [@slider1]="slider1" class="slider1">
+                                    <div id="cajaPesos" class="col-4 pl-0 pr-2" (click)="cajaPesos()">
 
-    <div class="cardDashboard">
-     
-            <div class="">
-                <div class="slider-div">                  
-                    <div class="slider-box">        
-                        <app-cajas-ahorro-pesos></app-cajas-ahorro-pesos>                             
-                    </div>      
-                </div>   
-            </div> 
+                                            <div class="flag">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="43" viewBox="0 0 27 43">
+                                                        <defs>
+                                                            <linearGradient id="a" x1="100%" y1="-14.722%" y2="100%">
+                                                                <stop offset="0%" class="color" stop-color="#023A82"/>
+                                                                <stop offset="100%" stop-color="#63D9CA"/>
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <path fill="url(#a)" d="M4 0h19a4 4 0 0 1 4 4v21.735a4 4 0 0 1-3.012 3.876C7.996 33.69 0 38.147 0 42.985V4a4 4 0 0 1 4-4z"/>
+                                                            <path fill="#FFF" fill-rule="nonzero" d="M9.424 22a.22.22 0 0 1-.126-.04.203.203 0 0 1-.085-.202l.664-3.723-2.812-2.637a.201.201 0 0 1-.055-.211.213.213 0 0 1 .174-.141l3.886-.543 1.738-3.388A.215.215 0 0 1 13 11c.082 0 .157.045.192.115l1.738 3.388 3.886.543a.213.213 0 0 1 .174.14.201.201 0 0 1-.055.212l-2.812 2.637.664 3.723a.203.203 0 0 1-.085.202.22.22 0 0 1-.227.016L13 20.218l-3.476 1.758a.223.223 0 0 1-.1.023z"/>
+                                                        </g>
+                                                    </svg>
+                                            </div>
+                                            <div class="linea_vertical color_1"></div>   
+                                            <div [@mainPesos]="mainPesos" class="slider-box wrong-item item"> 
+                                               
+                                                <app-cajas-ahorro-pesos></app-cajas-ahorro-pesos>
+                                            </div>  
+                                            
+                                    </div>
+                                    <div id="cajaDolares" class="col-4 px-1" (click)="cajaDolares()">
+                                              
+                                            <div [@mainDolares]="mainDolares" class="slider-box wrong-item item ">
+                                                <div class="linea_vertical color_1"></div>  
+                                                <app-cajas-ahorro-pesos></app-cajas-ahorro-pesos>
+                                            </div>
+                                    </div>
+                                    <div id="cajaAhorro" class="col-4 pr-0 pl-2">
+                                              
+                                            <div class="slider-box wrong-item item ">
+                                                <div class="linea_vertical color_1"></div>  
+                                                <app-cajas-ahorro-pesos></app-cajas-ahorro-pesos>
+                                            </div>
+                                    </div>
+                                    <div class="col-4 ml-3 pl-0 pr-2">
+                                            <div class="linea_vertical color_1"></div>  
+                                            <div class="slider-box wrong-item item "> 
+                                                <app-cajas-ahorro-pesos></app-cajas-ahorro-pesos>
+                                            </div>
+                                    </div>
+                                    <div class="col-4 px-1 ">
+                                            <div class="linea_vertical color_1"></div>  
+                                            <div class="slider-box wrong-item item "> 
+                                                <app-cajas-ahorro-pesos></app-cajas-ahorro-pesos>
+                                            </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <button type="button" class="btn-slide btn btn-secondary" (click)="toggleState()" ><i _ngcontent-pgi-c1="" [@arrow]="arrow" class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                            
+                            
+                            
+                            
+                            <div class="col-12 px-0">
+                                <div class="col-12 cardAside p-4">
+                                        <h4 class="subtitle">Caja de ahorro en pesos - Nº 02300003234994</h4>
+                                        <div class="flex-row mt-4 font-medium mb-2">
+                                            <h2 class="text-primary font-medium">Últimos movimientos</h2>
+                                            <span class="detail subtitle">Últimos<i class="fas fa-caret-down title pl-3 text-primary"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="cajaPesos">
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Pago inmediato</h3>
+                                                    <h3 class="text-primary">$820</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Transferencia</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Mercado Pago SUBE</h3>
+                                                    <h3>-$500</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Transporte</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Supermercado</h3>
+                                                    <h3>-$604,45</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Comida</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Acreditación de sueldo</h3>
+                                                    <h3 class="text-primary">$83.450</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Salario</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Pedidos Ya</h3>
+                                                    <h3>-$749</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Comida</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Farmacity</h3>
+                                                    <h3>-$645</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Compras</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Extracción tarjeta</h3>
+                                                    <h3>-$2.000</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Extracción</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Pago TC VISA</h3>
+                                                    <h3>-$7.591,87</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail"></h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Mercado Pago</h3>
+                                                    <h3>-$200</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Compras</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Pedidos Ya</h3>
+                                                    <h3 class="text-primary">$-350</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Comidas</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cajaDol fade-out">
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Dolar</h3>
+                                                    <h3 class="text-primary">$820</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Transferencia</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Mercado Pago SUBE</h3>
+                                                    <h3>-$500</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Transporte</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Supermercado</h3>
+                                                    <h3>-$604,45</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Comida</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Acreditación de sueldo</h3>
+                                                    <h3 class="text-primary">$83.450</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Salario</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Pedidos Ya</h3>
+                                                    <h3>-$749</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Comida</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Farmacity</h3>
+                                                    <h3>-$645</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Compras</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Extracción tarjeta</h3>
+                                                    <h3>-$2.000</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Extracción</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Pago TC VISA</h3>
+                                                    <h3>-$7.591,87</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail"></h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Mercado Pago</h3>
+                                                    <h3>-$200</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Compras</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fila py-4">
+                                                <div class="flex-row">
+                                                    <h3>Pedidos Ya</h3>
+                                                    <h3 class="text-primary">$-350</h3>
+                                                </div>
+                                                <div class="flex-row mt-n1">
+                                                    <h4 class="detail">Comidas</h4>
+                                                    <h4 class="detail">17 abril 2019</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-row mt-4">
+                                            <h3 class="text-primary">Ver más movimientos</h3>
+                                            <span class="subspan text-primary"><i class="fas fa-caret-down title pr-2 text-primary"></i>DESCARGAR MOVIMIENTOS</span>
+                                        </div>
+
+
+
+
+
+                                        
+
+                                </div>
+                                
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+    
+                        <input id="counter" name="counter" value="0" type="text">
+    
+
+
+
+                        <div class="col-12 col-md-12 col-lg-4 col-xl-4 col-aside p-0">
+                            <div class="flexAside">
+                                <a href="#" class="cardAsideRow px-4 border border-primary">
+                                    <h3>¿Necesitás hacer <br> una transferencia?</h3>
+                                    <i _ngcontent-pgi-c1="" class="fas fa-chevron-right" aria-hidden="true"></i>  
+                                </a>
+                                
+                                <div class="cardAsideRow px-4 accordionbtn" (click)="accordion()">
+                                    <h3 class="text-primary">Tu alias y CBU</h3>
+                                    <i _ngcontent-pgi-c1="" [@chevron]="chevron" class="fas fa-chevron-right" aria-hidden="true"></i>
+                                </div>
+                                 
+                            </div>
+                            <div [@acordeonFade]="acordeonFade" class="accordion">
+                                    <div class="card card-body">
+                                        <div class="flex-row">
+                                            <h4>CAJA.VACA.PERRO</h4>
+                                            <div class="clearfix"></div>
+                                            <div class="clearfix"></div>
+                                            <span (click)="showModal=true" (click)="toggleModal();toggleAlias()" class="line">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                                        <g fill="#58C3B5" fill-rule="nonzero">
+                                                            <path d="M10.211 6.004l-.717.718-1.722 1.724-2.083 2.084c-.6.599-1.198 1.196-1.795 1.796-.291.29-.59.576-.873.873l-.012.012c.109-.044.217-.09.326-.135-.322 0-.643 0-.965-.002l-1.547-.001H.469l.462.462c0-.322 0-.644-.002-.966l-.002-1.548v-.354c-.044.11-.09.217-.135.326l.717-.718 1.723-1.723 2.083-2.084L7.11 4.672c.29-.291.59-.576.872-.874l.013-.012h-.653a89547541.43 89547541.43 0 0 1 2.514 2.515l.354.355c.17.17.485.183.653 0a.47.47 0 0 0 0-.653 14924589.92 14924589.92 0 0 1-2.868-2.87.467.467 0 0 0-.653 0A9119035.366 9119035.366 0 0 1 5.047 5.43L3.72 6.757 2.395 8.084 1.243 9.236l-.808.808-.222.222c-.112.113-.203.216-.208.4-.012.401 0 .805.002 1.205l.001 1.57v.094c0 .25.211.462.462.462l1.196.001L3.24 14c.055 0 .104-.002.158-.008a.498.498 0 0 0 .283-.144l.153-.153.7-.7 1.085-1.087 1.3-1.3L8.26 9.265l1.216-1.217.92-.92c.15-.15.302-.3.45-.45l.02-.02c.171-.172.183-.486 0-.654a.474.474 0 0 0-.656 0zM13.189 2.714l-.546.546-.867.867-.202.202h.56l-.836-.835-1.319-1.32-.303-.303v.56l.578-.579.88-.881.127-.127.028-.027.016-.016c.01-.01.04-.032-.012.006-.057.044-.01.008.005 0 .021-.013.043-.022.065-.033l-.095.04a.56.56 0 0 1 .12-.033l-.106.014a.643.643 0 0 1 .143 0l-.106-.014a.54.54 0 0 1 .12.033l-.095-.04c.02.01.039.017.057.03l.03.02c.03.016-.043-.035-.043-.035.001.008.022.02.03.028l.025.025.12.118.434.436 1.007 1.007.153.153c.01.01.022.02.033.033l.004.004c.001.001.025.023.026.027 0-.009-.06-.087-.023-.027a.65.65 0 0 1 .038.074l-.04-.095a.56.56 0 0 1 .032.122l-.015-.105a.582.582 0 0 1 0 .126c.004-.035.008-.07.014-.105a.562.562 0 0 1-.033.123l.04-.095c-.013.025-.025.05-.039.073-.008.014-.037.052.004-.002.04-.056 0-.005-.01.005-.143.15-.159.413 0 .56.156.142.407.16.56 0a.894.894 0 0 0-.01-1.255l-.31-.31L12.335.617 12 .28a.919.919 0 0 0-.256-.188c-.273-.126-.614-.13-.87.046-.127.09-.233.204-.342.314l-.511.51c-.297.298-.595.59-.89.89l-.016.017a.4.4 0 0 0 0 .56l.835.835 1.319 1.32.303.303a.4.4 0 0 0 .56 0l.546-.546.867-.867.201-.202c.147-.146.157-.416 0-.56a.401.401 0 0 0-.556.003z"/>
+                                                        </g>
+                                                    </svg>                                                    
+                                            </span>
+                                            <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17">
+                                                    <g fill="none" fill-rule="evenodd" stroke="#58C3B5">
+                                                        <path stroke-width=".947" d="M8.763 6.972l-1 7.734c0 .611-.495 1.107-1.106 1.107H2.58a1.107 1.107 0 0 1-1.107-1.107l-1-7.734c0-.61.496-1.107 1.107-1.107h6.077c.611 0 1.106.496 1.106 1.107z"/>
+                                                        <path stroke-linecap="round" stroke-width=".888" d="M8.688 3.83H.548"/>
+                                                        <path stroke-linecap="round" stroke-width=".947" d="M4.619 8.515v3.631M2.671 3.42a1.947 1.947 0 0 1 3.895 0"/>
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </div> 
+                                        <h4 class="font-weight-bold mt-n1 mb-3">Alias</h4>
+                                        <h4>0150905601000114233854</h4>
+                                        <h4 class="font-weight-bold">CBU</h4>
+                                        <div class="col-12">
+                                                <a href="" class="float-right mr-n3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17">
+                                                            <g fill="none" fill-rule="evenodd" stroke="#58C3B5" stroke-width="1.2">
+                                                                <path d="M10.77 5.572v9.122A1.3 1.3 0 0 1 9.475 16H2.371a1.3 1.3 0 0 1-1.294-1.306V5.572A1.3 1.3 0 0 1 2.37 4.267h7.105a1.3 1.3 0 0 1 1.293 1.305z"/>
+                                                                <path d="M4 2.335C4 1.598 4.598 1 5.335 1h7.33C13.402 1 14 1.598 14 2.335v9.33c0 .737-.598 1.335-1.335 1.335"/>
+                                                            </g>
+                                                        </svg>
+                                                    <span  class="copy ml-1">COPIAR DATOS</span>
+                                                </a>   
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                            <a href="#" class="col-12 cardAside px-4 pt-4 pb-3 mt-hb border border-primary">
+                                <div class="flex-row">
+                                    <h3>¿Querés abrir una cuenta?</h3>
+                                    <i _ngcontent-pgi-c1="" class="fas fa-chevron-right" aria-hidden="true"></i>  
+                                </div>
+                                    <hr class="mt-3 mb-1">
+                                    <span class="subspan">Consultá el estado del trámite</span>
+                            </a>
+                            
+                            <div class="cardAside p-4">
+                                <h3 class="text-primary">Más Opciones</h3>
+                                <a href="#" class="flex-row py-3 title">
+                                    <h4>Extracción sin tarjeta</h4>
+                                    <i _ngcontent-pgi-c1="" class="fas fa-chevron-right detail" aria-hidden="true"></i>
+                                </a>
+                                <hr>
+                                <span (click)="showModal=true" (click)="toggleModal();toggleCo()" class="flex-row py-3 title">
+                                    <h4>Cotitulares</h4>
+                                    <i _ngcontent-pgi-c1="" class="fas fa-chevron-right detail" aria-hidden="true"></i>
+                                </span>
+                                <hr>
+                                <a href="#" class="flex-row py-3 title">
+                                        <h4>Extracto</h4>
+                                        <i _ngcontent-pgi-c1="" class="fas fa-chevron-right detail" aria-hidden="true"></i>
+                                </a>
+                                <hr>
+                                <span (click)="showModal=true" (click)="toggleModal();togglePedidos()" class="flex-row py-3 title">
+                                        <h4>Pedidos de chequeras</h4>
+                                        <i _ngcontent-pgi-c1="" class="fas fa-chevron-right detail" aria-hidden="true"></i>
+                                </span>
+                                <hr>
+                                <a href="#" class="flex-row py-3 title">
+                                        <h4> <b>Cerrar cuenta</b> </h4>
+                                        <i _ngcontent-pgi-c1="" class="fas fa-chevron-right detail" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            
+                            
+                        </div>
+                </div>
+            
+            
+    
+    
         </div>
-</section>  
+    </section>

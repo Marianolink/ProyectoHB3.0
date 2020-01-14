@@ -2,77 +2,88 @@
     <div class="content" style="height:100%;">
       <div class="contentLog ">
         <div class="login">
+          <!--REGISTRATE AL HOMEBANKING-->
           <div id="registro" class="contentForm gris">
             <div class="contentElement">
   
-              <div class="elementosSub" id="elementRegistro">
+              <div class="elementosSub back_registro" id="elementRegistro">
                 <div class="texto_login">¿No tenés usuario?</div>
                 <div class="texto_sub_login">Creá un usuario para<br/>acceder a tu nuevo homebanking</div>
-                <div class="btn_login" (click)="registro()">REGISTRATE</div>
+                <div class="btn_login" (click)="registro()">CREA TU USUARIO</div>
                 <div class="text_bottom blanco">Si ten&eacute;s dudas mirá este <b>tutorial.</b></div>
               </div>
   
               <div class="elementos ocultar" id="elementReg">
-                  <div id="ttLogin" class="ttLogin">Creá un nuevo usuario</div>
-                  <div id="ttLogin" class="bajadaLogin">Ingresá los siguientes datos</div>
+                  <div id="ttLogin" class="ttLogin">
+                    Creá un <strong>nuevo usuario</strong>
+                    <p id="ttLogin" class="bajadaLogin"> Ingresá los siguientes datos</p>
+                  </div>
+                  
                   <div id="group_usuario" class="group">
-                    <input id="usuario" type="text" onclick="javascript:selectForm();" onfocus="javascript:jsFocus('usuario');" value="" name="usuario" required><label>Usuario</label>
+                      <label>Usuario</label>
+                    <input id="usuario" type="text" onclick="javascript:selectForm();" onfocus="javascript:jsFocus('usuario');" value="" name="usuario" required>
                     <div class="error" id="error_usuario"></div>
                   </div>
+
                   <div id="group_usuario" class="group">
-                    <input id="pass" type="password" onfocus="javascript:jsFocus('pass');" value="" name="pass" required><label>Contrase&ntilde;a</label>
+                    <label>Contraseña</label>
+                    
+                    <input id="pass" type="password" onfocus="javascript:jsFocus('pass');" value="" name="pass" required>
                     <div class="error" id="error_pass"></div>
                   </div>
-                  <div id="validacion" >
-                    <div id="texto_validation">
-                      <p>Demostranos que sos un humano</p>
-                      <small>Arrastrá para ordenarlos</small>
-                    </div>
 
-                    <div id="number_validation">
-                      <ol class="progress">
-                        <li class="is-active" data-step="1">                          
-                        </li>
-                        <li data-step="2">                          
-                        </li>
-                        <li data-step="3" class="progress__last">         
-                        </li>
-                        <li class="is-active" data-step="1">                          
-                        </li>
-                        <li data-step="2">                          
-                        </li>
-                        <li data-step="3" class="progress__last">         
-                        </li>
-                      </ol>                      
+                  <div class="ingreso_hb">
+                    <div id="validacion" >
+                      <div id="teclado_virtual">
+                        <small><a href=""> Teclavo virtual</a></small>
+                      </div>
                     </div>
-
-                  </div>
-                  <div class="pie_login">
-                    <div id="btn_login2" class="btn_login2" (click)="login()">CREAR</div>
+                    <div class="pie_login">
+                      <div id="btn_login2" class="btn_login2" (click)="login()">Crea tu usuario</div>
+                    </div>
                   </div>
               </div>
             </div>
           </div>
+
+
+
+          <!--LOGUEATE AL HOMEBANKING-->
           <div id="login" class="contentForm select">
             <div class="contentElement">
   
               <div class="elementos" id="elementIngreso">
-                <div id="ttLogin" class="ttLogin">Ingres&aacute;<br/>a tu homebanking</div>
+                <div id="ttLogin" class="ttLogin">Ingres&aacute;<br/>a tu <strong>homebanking</strong></div>
                 <div id="group_usuario" class="group">
-                  <input id="usuario" type="text" onclick="javascript:selectForm();" onfocus="javascript:jsFocus('usuario');" value="" name="usuario" required><label>Usuario</label>
+                  <label>Usuario</label>
+                  <input id="usuario" type="text" onclick="javascript:selectForm();" onfocus="javascript:jsFocus('usuario');" value="" name="usuario" required>
                   <div class="error" id="error_usuario"></div>
+                  <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                  <label for="checkbox-1" class="checkbox-custom-label">Recordar Usuario</label>
                 </div>
-                <div id="group_usuario" class="group">
-                  <input id="pass" type="password" onfocus="javascript:jsFocus('pass');" value="" name="pass" required><label>Contrase&ntilde;a</label>
+                
+                <div id="group_usuario" class="group pass">
+                  <label>Contraseña</label>
+                  <input id="pass" type="password" onfocus="javascript:jsFocus('pass');" value="" name="pass" required>
                   <div class="error" id="error_pass"></div>
                 </div>
-                <div class="pie_login">
-                  <div id="btn_login2" class="btn_login2" (click)="login()">INGRESÁ</div>
+
+          
+                <div id="validacion" >
+                  <div id="teclado_virtual">
+                    <small><a href=""> Teclavo virtual</a></small>
+                  </div>
                 </div>
-                <div class="text_bottom">¿Problemas con tu usuario o password? <b>Te ayudamos a solucionarlo.</b></div>
+                <div class="pie_login">
+                  <a href="" id="btn_login2" class="btn_login2" (click)="login()">INGRESÁ</a>
+                </div>
+                  
+                  
+   
+                <div class="text_bottom">¿Problemas con tu usuario o contraseña? <b>Te ayudamos a solucionarlo.</b></div>
               </div>
   
-              <div class="elementosSub ocultar" id="elementIngreso2">
+              <div class="elementosSub  back_login ocultar" id="elementIngreso2">
                   <div class="texto_login">¿Ya ten&eacute;s usuario?</div>
                   <div class="texto_sub_login">Para acceder a tu home banking<br/>ingresá tu usuario y contrasena</div>
                   <div class="btn_login" (click)="log()">INGRESAR</div>
@@ -87,5 +98,5 @@
       </div>
       <div class="background_login"></div>
     </div>
-  </section>
-  
+</section>
+
